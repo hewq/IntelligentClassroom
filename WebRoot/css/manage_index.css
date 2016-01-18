@@ -1,0 +1,180 @@
+/* CSS Document */
+body {
+	overflow: hidden;
+}
+#id {
+	cellspacing: 0px;
+	cellpadding: 0px;
+}
+#id1{
+	position:relative;
+	width:150px;
+	height:60px;
+	border:solid;
+	margin:-8px;
+	padding:0px;
+	background-color:#FFFFFF;
+	border-width:thin;
+	border-style:solid;
+	border-color:#CCCCCC;}
+#name{
+	position:absolute;
+	font-family:"ËÎÌו";
+	font-size:28px;
+	color:#22BAA0;
+	font-style:italic;
+	font-weight:bold;
+	left:25px;
+	top:10px;}
+#id2{
+	position:relative;
+	width:1400px;
+	float:left;
+	border-bottom:1px solid #CCCCCC}
+#id2 input{
+	position:absolute;
+	left:180px;
+	top:-40px;}
+#id2 select{
+	position:absolute;
+	right:60px;
+	top:-40px;}
+#id3{
+	position:relative;
+	width:152px;
+	height:630px;
+	background-color:#325269;
+	margin-left:-8px;
+	padding-top:5px;
+	}
+.icon1{
+	position:absolute;
+	top:30px;
+	width:150px;
+	height:40px;
+	left:25px;
+}
+.icon1 a{
+	color:#2e2e2e;
+	text-decoration:none;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	}
+.icon1 a:link,.icon1 a:visited{
+	text-decoration:none;
+	}	
+.icon1 a:hover{
+	text-decoration:blink;
+	color:#ffffff;
+	}
+.icon2{
+	position:absolute;
+	width:150px;
+	height:40px;
+	left:25px;
+	top:70px;
+}
+.icon2:hover ~ dd div{
+	display:block;
+}
+.icon2 a{
+	color:#2e2e2e;
+	text-decoration:none;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;}
+.icon2 a:link,.icon2 a:visited{
+	text-decoration:none;}
+.icon2 a:hover{
+	text-decoration:blink;
+	color:#ffffff;
+	}
+.icon3{
+	position:position;
+	top:110px;
+	width:150px;
+	height:40px;
+	margin-left:25px;
+}
+.icon3 a{
+	color:#2e2e2e;
+	text-decoration:none;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	}
+.icon3 a:link,.icon1 a:visited{
+	text-decoration:none;
+	}	
+.icon3 a:hover{
+	text-decoration:blink;
+	color:#ffffff;
+	}
+.icon4{
+	position:position;
+	top:150px;
+	width:150px;
+	height:40px;
+	left:25px;
+}
+.icon4 a{
+	color:#2e2e2e;
+	text-decoration:none;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	}
+.icon4 a:link,.icon1 a:visited{
+	text-decoration:none;
+	}	
+.icon4 a:hover{
+	text-decoration:blink;
+	color:#ffffff;
+	}
+.icon5{
+	position:position;
+	top:190px;
+	width:150px;
+	height:40px;
+	left:25px;
+}
+.icon5 a{
+	color:#2e2e2e;
+	text-decoration:none;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	}
+.icon5 a:link,.icon1 a:visited{
+	text-decoration:none;
+	}	
+.icon5 a:hover{
+	text-decoration:blink;
+	color:#ffffff;
+	}
+.menv03{
+	margin-top:105px;
+	margin-left:75px;
+}
+.sideleft{
+	display:none;}
+.a{
+	font-size:20px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.a:hover{
+	color:#888888;
+}
+.open{
+	display:block;}
+.close{
+	display:none;}
+
+

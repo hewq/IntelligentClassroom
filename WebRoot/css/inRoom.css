@@ -1,0 +1,279 @@
+/* CSS Document */
+body {
+	overflow: hidden;
+}
+
+#id {
+	cellspacing: 0px;
+	cellpadding: 0px;
+}
+
+#id1 {
+	position: relative;
+	width: 150px;
+	height: 60px;
+	border: solid;
+	margin: -8px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	border-width: thin;
+	border-style: solid;
+	border-color: #CCCCCC;
+}
+
+#name {
+	position: absolute;
+	font-family: "宋体";
+	font-size: 28px;
+	color: #22BAA0;
+	font-style: italic;
+	font-weight: bold;
+	left: 25px;
+	top: 10px;
+}
+
+#id2 {
+	position: relative;
+	width: 1400px;
+	float: left;
+	border-bottom: 1px solid #CCCCCC;
+	margin-top: -16px;
+}
+
+#id2 input {
+	position: absolute;
+	left: 180px;
+	top: -24px;
+}
+
+#id2 select {
+	position: absolute;
+	right: 60px;
+	top: -24px;
+}
+
+#id3 {
+	position: relative;
+	width: 152px;
+	height: 610px;
+	background-color: #325269;
+	margin-left: -8px;
+	padding-top: 5px;
+}
+
+.icon1 {
+	position: absolute;
+	top: 30px;
+	width: 150px;
+	height: 40px;
+	left: 25px;
+}
+
+.icon1 a {
+	color: #2e2e2e;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+}
+
+.icon1 a:link,.icon1 a:visited {
+	text-decoration: none;
+}
+
+.icon1 a:hover {
+	text-decoration: blink;
+	color: #ffffff;
+}
+
+.icon2 {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	left: 25px;
+	top: 70px;
+}
+
+.icon2:hover  ~ dd div {
+	display: block;
+}
+
+.icon2 a {
+	color: #2e2e2e;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+}
+
+.icon2 a:link,.icon2 a:visited {
+	text-decoration: none;
+}
+
+.icon2 a:hover {
+	text-decoration: blink;
+	color: #ffffff;
+}
+
+.menv03 {
+	margin-top: 105px;
+	margin-left: 75px;
+}
+
+.sideleft {
+	display: none;
+}
+
+.a {
+	font-size: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.a:hover {
+	color: #888888;
+}
+
+.open {
+	display: block;
+}
+
+.close {
+	display: none;
+}
+
+#id4 {
+	position: absolute;
+	width: 1300px;
+	height: 630px;
+	top: 55px;
+	left: 152px;
+	background-color: #f5f6f7;
+}
+
+#id4 p {
+	font-weight: bold;
+	color: #656565;
+	font-size: 20px;
+	margin-left: 30px;
+}
+
+#id5 {
+	position: absolute;
+	top: 110px;
+	left: 152px;
+	border: solid 1px #dddddd;
+	border-radius: 5px;
+	margin-left: 30px;
+	width: 350px;
+	height: 420px;
+}
+.inRoomTable1{
+	margin:15px;
+	width:320px;
+	height:320px;
+	border-collapse:collapse;
+	border:solid #dddddd 1px;
+}
+.inRoomTable1 tr{
+	border:solid #dddddd 1px;
+}
+.inRoomTable1 tr td{
+	width:32px;
+	height:32px;
+	border:solid #dddddd 1px;
+}
+#id51{
+	width:350px;
+	height:35px;
+	background-color:#13c4a5;
+}
+#id51form1{
+	padding:8px;
+}
+#id51form2{
+	margin-top:-45px;
+	padding-left:90px;
+}
+#id6{
+	position: absolute;
+	top: 110px;
+	left: 502px;
+	border: solid 1px #dddddd;
+	border-radius: 5px;
+	margin-left: 30px;
+	width: 350px;
+	height: 500px;
+}
+#id61{
+	width:350px;
+	height:35px;
+	background-color:#13c4a5;
+}
+#id61 span{
+	position: absolute;
+	top:5px;
+	left:165px;
+	font-family:"宋体";
+	color:#e2f8f4;
+}
+.inRoomTable2{
+	text-align:center;
+	margin:15px;
+	width:320px;
+	height:80px;
+	border-collapse:collapse;
+}
+.inRoomTable2 tr{
+	border:solid #dddddd 1px;
+}
+.inRoomTable2 tr td{
+	width:64px;
+	border:solid #dddddd 1px;
+}
+#id63{
+	position:absolute;
+	top: 130px;
+	left: -15px;
+	margin-left: 30px;
+	width: 320px;
+	height: 350px;
+	overflow: auto;
+	word-break: break-all;
+}
+.inRoomTable3{
+	position:absolute;
+	text-align:center;
+	margin:0px;
+	width:320px;
+	height:50px;
+	border-collapse:collapse;
+}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+	width: 4px;
+} 
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+} 
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255, 0, 0, 0.4);
+}
+.inRoomTable3 tr{
+	border:solid #dddddd 1px;
+}
+.inRoomTable3 tr td{
+	width:64px;
+	border:solid #dddddd 1px;
+}
