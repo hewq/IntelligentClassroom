@@ -1,0 +1,93 @@
+/* CSS Document */
+#id0{
+	position:relative;
+}
+#id00{
+	position:absolute;
+	background-image:url(../image/logo8.png);
+	height:61px;
+	width:330px;
+}
+#id01{
+	position:absolute;
+	margin:150px 0px 0px 200px;
+}
+#id01 p{
+	font-family:"Courier New", Courier, monospace;
+	font-style:oblique;
+	font-size:24px;
+	font-weight:bold;
+}
+#id02{
+	position:absolute;
+	height:550px;
+	width:360px;
+	border:groove 1px #e1e1e1;
+	margin-left:800px;
+	margin-top:80px;
+	border-top:5px solid #22baa0;
+	border-radius:5px;
+}
+
+#id020{
+	background-image:url(../image/logo8.png);
+	height:61px;
+	width:330px;
+	margin-left:10px;
+	margin-bottom:20px;
+	margin-top:15px;
+}
+#id021{
+	text-align:center;
+	font-family:"Courier New", Courier, monospace;
+	font-size:18px;
+	font-weight:bold;
+	margin:30px;
+}
+#id0220{
+	height:40px;
+	width:330px;
+	margin:10px;
+	border:hidden;
+	border-style:none;
+	border-bottom:solid 1px #cfd2d5;
+	font-size:18px;
+}
+#id0221{
+	height:30px;
+	width:330px;
+	margin:10px;
+	border:hidden;
+	border-style:none;
+	border-bottom:solid 1px #cfd2d5;
+	font-size:18px;
+}
+.cinput{
+	
+}
+#id0220:focus,#id0221:focus{
+	height:30px;
+	width:330px;
+	margin:10px;
+	border:solid 1px #ffffff;
+	border-bottom:solid 2px #22baa0;
+}
+#id023{
+	text-align:center;
+	margin:30px;
+}
+#id023 button{
+	height:40px;
+	width:280px;
+	font-size:18px;
+	background-color:#22baa0;
+	color:#FFFFFF;
+}
+#id023 button:hover{
+	filter:Alpha(Opacity=70);opacity:0.7;-moz-opacity:0.7;
+	height:40px;
+	width:280px;
+	font-size:18px;
+	background-color:#22baa0;
+	color:#FFFFFF;
+}

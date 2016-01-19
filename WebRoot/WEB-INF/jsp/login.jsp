@@ -4,46 +4,39 @@
 <html>
 <head>
 
-<title>智慧教室管理系统</title>
+<title>login</title>
 
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath }/css/login.css" />
 
 </head>
-
 <body>
-
-	<div id="container">
-
-		<div id="toptitle">
-
-			<div id="name">方友ERP 1.0.0-ALPHA</div>
-			<div id="welcome">欢迎您!</div>
-
+	<div id="id0">
+		<div id="id00">
 		</div>
-
-		<div id="logintext">
-
-			<div id="login">登录</div>
-
+		<div id="id01">
+			<p>welcome to Intelligent-Classroom</p>
 		</div>
-
-		<div id="form">
-
-			<form action="${pageContext.request.contextPath }/servlet/LoginServlet" method="post">
-				<div id="input">
-					account：<input type="text" name="account" /><br> 
-					password：<input	type="password" name="password" /><br>
-				</div>
-
-				<div id="btn">
-					<input type="submit" value="login" /> 
-				</div>
-			</form>
-
+		<div id="id02">
+			<div id="id020">
+			
+			</div>
+			<div id="id021">
+				Sign in to your account
+			</div>
+			<div id="form">
+				<form action="${pageContext.request.contextPath }/servlet/LoginServlet" method="post">
+					<div id="id022">
+						<input id="id0220" class="cinput" type="text" name="account" value="account" />
+						<input id="id0221" class="cinput" type="password" name="password" value="password"  />
+					</div>
+					<div id="id023">
+						<button type="submit" name="signin" value="Sign In">Sign In</button>
+					</div>
+				</form>
+			</div>
 		</div>
-
 	</div>
-
 </body>
+<body>
 </html>
