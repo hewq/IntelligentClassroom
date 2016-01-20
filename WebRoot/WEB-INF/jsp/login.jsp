@@ -8,7 +8,8 @@
 
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath }/css/login.css" />
-
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath }/image/title.png">
 </head>
 <body>
 	<div id="id0">

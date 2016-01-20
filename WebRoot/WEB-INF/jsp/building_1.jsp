@@ -8,6 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath }/css/room.css" />
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath }/image/title.png">
 <script src="${pageContext.request.contextPath }/js/index.js"
 	type="text/javascript"></script>
 <script src="${pageContext.request.contextPath }/js/building.js"

@@ -8,6 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath }/css/room.css" />
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath }/image/title.png">
 <script src="${pageContext.request.contextPath }/js/index.js"
 	type="text/javascript"></script>
 <title>ROOM</title>
@@ -67,8 +69,7 @@
 						<button class="button" onclick="B1F3forward()">F3</button>
 						<button class="button" onclick="B1F4forward()">F4</button>
 						<button class="button" onclick="B1F5forward()">F5</button>
-						<button class="button" onclick="B1F6forward()">F6</button>
-					</td>
+						<button class="button" onclick="B1F6forward()">F6</button></td>
 				</tr>
 				<tr id="tr2">
 					<th>房间</th>

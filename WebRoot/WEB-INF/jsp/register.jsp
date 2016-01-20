@@ -4,6 +4,7 @@
 <html>
 <head>
 <title>REGISTER</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath }/image/title.png">
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath }/css/register.css" />
 </head>
