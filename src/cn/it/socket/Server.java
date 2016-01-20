@@ -10,7 +10,7 @@ import java.net.Socket;
 
 public class Server {
 
-	public static final int PORT = 8080;
+	public static final int PORT = 12345;
 	
 	public static void main(String[] args) {
 		System.out.println("·þÎñÆ÷Æô¶¯¡£¡£¡£\n");

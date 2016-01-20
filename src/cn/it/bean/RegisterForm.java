@@ -9,7 +9,8 @@ public class RegisterForm {
 	private String person_name;
 	private String person_age;
 	private String person_account;
-	private String person_passwork;
+	private String person_password;
+	private String person_password2;
 	private String person_power;
 	private String person_cardCode;
 	private Map errors = new HashMap();
@@ -46,12 +47,20 @@ public class RegisterForm {
 		this.person_account = person_account;
 	}
 
-	public String getPerson_passwork() {
-		return person_passwork;
+	public String getPerson_password() {
+		return person_password;
 	}
 
-	public void setPerson_passwork(String person_passwork) {
-		this.person_passwork = person_passwork;
+	public void setPerson_password(String person_passwork) {
+		this.person_password = person_password;
+	}
+
+	public String getPerson_password2() {
+		return person_password2;
+	}
+
+	public void setPerson_password2(String person_password2) {
+		this.person_password2 = person_password2;
 	}
 
 	public String getPerson_power() {
@@ -78,9 +87,20 @@ public class RegisterForm {
 		this.errors = errors;
 	}
 
+	public void init(){
+		errors.put("person_num", "8位数字。");
+		errors.put("person_name", "汉字");
+		errors.put("person_age", "1-3位数字。");
+		errors.put("person_account", "3-8位字母。");
+		errors.put("person_password", "至少6位数字或字母。");
+		errors.put("person_password2", "至少6位数字或字母。");
+		errors.put("person_num", "1位数字。");
+		errors.put("person_num", "9位数字。");
+	}
+	
 	public boolean validate() {
 		boolean isOK = true;
-
+		
 		if (this.person_num == null || this.person_num.trim().equals("")) {
 			isOK = false;
 			errors.put("person_num", "员工号不能为空！");
@@ -97,7 +117,7 @@ public class RegisterForm {
 		} else {
 			if (!this.person_name.matches("^([\u4e00-\u9fa5]+)$")) {
 				isOK = false;
-				errors.put("person_num", "用户名必须是汉字！");
+				errors.put("person_name", "用户名必须是汉字！");
 			}
 		}
 		
@@ -107,7 +127,7 @@ public class RegisterForm {
 		} else {
 			if (!this.person_age.matches("[0-9]{1,3}")) {
 				isOK = false;
-				errors.put("person_age", "年龄必须是1-3位的数字！");
+				errors.put("person_age", "年龄格式不对！");
 			}
 		}
 
@@ -121,16 +141,26 @@ public class RegisterForm {
 			}
 		}
 		
-		if (this.person_passwork == null || this.person_passwork.trim().equals("")) {
+		if (this.person_password == null || this.person_password.trim().equals("")) {
 			isOK = false;
-			errors.put("person_passwork", "密码不能为空！");
+			errors.put("person_password", "密码不能为空！");
 		} else {
-			if (!this.person_passwork.matches("\\d{3,8}")) {
+			if (!this.person_password.matches("[A-Za-Z0-9]{6,}")) {
 				isOK = false;
-				errors.put("person_passwork", "密码必须是3-8位的数字！");
+				errors.put("person_password", "密码必须是至少6位的数字或字母！");
 			}
 		}
 
+		if (this.person_password2 == null || this.person_password2.trim().equals("")) {
+			isOK = false;
+			errors.put("person_password2", "密码不能为空！");
+		} else {
+			if (!this.person_password2.equals(this.person_password)) {
+				isOK = false;
+				errors.put("person_password2", "两次密码不一致！");
+			}
+		}
+		
 		if (this.person_power == null || this.person_power.trim().equals("")) {
 			isOK = false;
 			errors.put("person_power", "权限不能为空！");
@@ -145,7 +175,7 @@ public class RegisterForm {
 			isOK = false;
 			errors.put("person_cardCode", "Person_cardCode不能为空！");
 		} else {
-			if (!this.person_cardCode.matches("[0-9]{8}")) {
+			if (!this.person_cardCode.matches("[0-9]{9}")) {
 				isOK = false;
 				errors.put("person_cardCode", "Person_cardCode格式不对");
 			}
