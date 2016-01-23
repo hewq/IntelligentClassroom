@@ -24,6 +24,7 @@ function hidden(){
 	
 	divNode.className = "close";
 }
+
 function F1forward(){
 	window.location.replace("RoomF1UIServlet");
 }
@@ -152,10 +153,4 @@ function B5F6forward(){
 }
 function Registerforward(){
 	window.location.replace("RegisterUIServlet");
-}
-function AllOn(){
-	window.location.replace("AllOnServlet");
-}
-function AllOff(){
-	window.location.replace("AllOffServlet");
 }

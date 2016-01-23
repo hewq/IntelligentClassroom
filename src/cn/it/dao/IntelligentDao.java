@@ -1,5 +1,7 @@
 package cn.it.dao;
 
+import java.sql.ResultSet;
+
 import cn.it.domain.User;
 
 public interface IntelligentDao {
@@ -46,5 +48,7 @@ public interface IntelligentDao {
 	void update(User user);
 
 	void update(String sql);
+
+	ResultSet select(String sql);
 
 }

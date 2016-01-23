@@ -237,6 +237,11 @@
     <servlet-name>AllOffServlet</servlet-name>
     <servlet-class>cn.it.web.controller.AllOffServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>UpdateLightStateServlet</servlet-name>
+    <servlet-class>cn.it.web.controller.UpdateLightStateServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>Building_1UIServlet</servlet-name>
     <url-pattern>/servlet/Building_1UIServlet</url-pattern>
@@ -472,6 +477,10 @@
   <servlet-mapping>
     <servlet-name>AllOffServlet</servlet-name>
     <url-pattern>/servlet/AllOffServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateLightStateServlet</servlet-name>
+    <url-pattern>/servlet/UpdateLightStateServlet</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

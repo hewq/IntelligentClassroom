@@ -18,7 +18,7 @@ public class ServiceTest {
 		user.setPerson_cardCode("98989");
 		user.setPerson_name("込込込込");
 		user.setPerson_num("23333");
-		user.setPerson_passwork("1234567");
+		user.setPerson_password("1234567");
 		user.setPerson_power("1");
 		
 		bsi.register(user);

@@ -51,7 +51,7 @@ public class RegisterForm {
 		return person_password;
 	}
 
-	public void setPerson_password(String person_passwork) {
+	public void setPerson_password(String person_password) {
 		this.person_password = person_password;
 	}
 
@@ -100,7 +100,7 @@ public class RegisterForm {
 	
 	public boolean validate() {
 		boolean isOK = true;
-		
+
 		if (this.person_num == null || this.person_num.trim().equals("")) {
 			isOK = false;
 			errors.put("person_num", "员工号不能为空！");
@@ -145,12 +145,12 @@ public class RegisterForm {
 			isOK = false;
 			errors.put("person_password", "密码不能为空！");
 		} else {
-			if (!this.person_password.matches("[A-Za-Z0-9]{6,}")) {
+			if (!this.person_password.matches("[A-Za-z0-9]{6,}")) {
 				isOK = false;
 				errors.put("person_password", "密码必须是至少6位的数字或字母！");
 			}
 		}
-
+		
 		if (this.person_password2 == null || this.person_password2.trim().equals("")) {
 			isOK = false;
 			errors.put("person_password2", "密码不能为空！");

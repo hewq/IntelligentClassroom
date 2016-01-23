@@ -32,7 +32,7 @@ public class IntelligentDaoImpl implements IntelligentDao {
 				+ ",'"
 				+ user.getPerson_account()
 				+ "','"
-				+ user.getPerson_passwork()
+				+ user.getPerson_password()
 				+ "',"
 				+ user.getPerson_power()
 				+ ",'"
@@ -91,7 +91,7 @@ public class IntelligentDaoImpl implements IntelligentDao {
 				user.setPerson_id(rs.getString("person_id"));
 				user.setPerson_name(rs.getString("person_name"));
 				user.setPerson_num(rs.getString("person_num"));
-				user.setPerson_passwork(rs.getString("person_passwork"));
+				user.setPerson_password(rs.getString("person_passwork"));
 				user.setPerson_power(rs.getString("person_position"));
 
 				return user;
@@ -155,8 +155,8 @@ public class IntelligentDaoImpl implements IntelligentDao {
 		ResultSet rs = null;
 
 		String sql = "update person set person_age=" + user.getPerson_age()
-				+ ",person_name=" + user.getPerson_name() + ",person_passwork="
-				+ user.getPerson_passwork() + " where person_id="
+				+ ",person_name=" + "'"+user.getPerson_name()+"'" + ",person_passwork="
+				+ user.getPerson_password() + " where person_id="
 				+ user.getPerson_id();
 
 		Connection conn = DBUtil.getConn();
@@ -175,5 +175,16 @@ public class IntelligentDaoImpl implements IntelligentDao {
 		Connection conn = DBUtil.getConn();
 		DBUtil.executeUpdate(conn, sql);
 		DBUtil.close(conn, stmt, rs);
+	}
+	
+	public ResultSet select(String sql){
+		
+		Statement stmt = null;
+		ResultSet rs = null;
+
+		Connection conn = DBUtil.getConn();
+		rs = DBUtil.executeQuery(conn, sql);
+		DBUtil.close(conn, stmt, rs);
+		return rs;
 	}
 }

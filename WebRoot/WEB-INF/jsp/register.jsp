@@ -27,9 +27,9 @@
 				<span class="csp">${form.errors.person_age}</span> 
 				<input class="cinput" type="text" name="person_account" value="ACCOUNT" />
 				<span class="csp">${form.errors.person_account}</span>
-				<input class="cinput" type="text" name="person_password" value="PASSWORD" /> 
+				<input class="cinput" type="password" name="person_password" value="PASSWORD" /> 
 				<span class="csp">${form.errors.person_password}</span>
-				<input class="cinput" type="text" name="person_password2" value="PASSWORD AGAIN" />
+				<input class="cinput" type="password" name="person_password2" value="PASSWORD AGAIN" />
 				<span class="csp">${form.errors.person_password2}</span> 
 				<input class="cinput" type="text" name="person_power" value="POWER" /> 
 				<span class="csp">${form.errors.person_power}</span>

@@ -7,7 +7,7 @@ public class User {
 	private String Person_name;
 	private String Person_age;
 	private String Person_account;
-	private String Person_passwork;
+	private String Person_password;
 	private String Person_power;
 	private String Person_cardCode;
 	public String getPerson_num() {
@@ -34,11 +34,11 @@ public class User {
 	public void setPerson_account(String person_account) {
 		Person_account = person_account;
 	}
-	public String getPerson_passwork() {
-		return Person_passwork;
+	public String getPerson_password() {
+		return Person_password;
 	}
-	public void setPerson_passwork(String person_passwork) {
-		Person_passwork = person_passwork;
+	public void setPerson_password(String person_password) {
+		Person_password = person_password;
 	}
 	public String getPerson_power() {
 		return Person_power;

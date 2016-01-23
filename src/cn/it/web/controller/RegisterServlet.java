@@ -19,6 +19,7 @@ public class RegisterServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		request.setCharacterEncoding("UTF-8");
+
 		//1.对表单字段进行合法性校验
 		RegisterForm form = WebUtils.request2Bean(request, RegisterForm.class);
 		boolean b = form.validate();

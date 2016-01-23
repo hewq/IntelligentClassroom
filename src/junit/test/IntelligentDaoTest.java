@@ -17,7 +17,7 @@ public class IntelligentDaoTest {
 		user.setPerson_cardCode("123123");
 		user.setPerson_name("¶þ¸ç");
 		user.setPerson_num("555");
-		user.setPerson_passwork("123456");
+		user.setPerson_password("123456");
 		user.setPerson_power("3");
 		idi.add(user);
 	}
@@ -32,7 +32,7 @@ public class IntelligentDaoTest {
 	public void testFind(){
 		IntelligentDao idi = new IntelligentDaoImpl();
 		User user = new User();
-		user = idi.find("44", "123456");
+		user = idi.find("2356", "123456");
 		System.out.println(user.getPerson_id());
 	}
 	
@@ -47,8 +47,8 @@ public class IntelligentDaoTest {
 	public void testUpdate(){
 		IntelligentDao idi = new IntelligentDaoImpl();
 		User user = new User();
-		user = idi.find("44", "123456");
-		user.setPerson_passwork("0000");
+		user = idi.find("2356", "123456");
+		user.setPerson_password("0000");
 		idi.update(user);
 	}
 }

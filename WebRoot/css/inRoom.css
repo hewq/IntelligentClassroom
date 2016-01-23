@@ -46,6 +46,12 @@ body {
 	top: -24px;
 }
 
+#id2 span{
+	position:absolute;
+	left:380px;
+	top:-24px;
+}
+
 #id2 select {
 	position: absolute;
 	right: 60px;
@@ -276,4 +282,10 @@ body {
 .inRoomTable3 tr td{
 	width:64px;
 	border:solid #dddddd 1px;
+}
+.close{
+	display:none;
+}
+.show{
+	display:block;
 }

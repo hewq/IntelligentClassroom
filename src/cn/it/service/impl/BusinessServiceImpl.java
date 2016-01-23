@@ -18,8 +18,8 @@ public class BusinessServiceImpl {
 		if(b){
 			throw new UserExistException();
 		}else{
-			String md5Password = ServiceUtils.md5(user.getPerson_passwork());
-			user.setPerson_passwork(md5Password);
+			String md5Password = ServiceUtils.md5(user.getPerson_password());
+			user.setPerson_password(md5Password);
 			dao.add(user);
 		}
 	}
