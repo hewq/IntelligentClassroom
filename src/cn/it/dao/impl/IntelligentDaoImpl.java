@@ -11,6 +11,35 @@ import cn.it.utils.DBUtil;
 
 public class IntelligentDaoImpl implements IntelligentDao {
 
+	private Statement stmt = null;
+	private ResultSet rs = null;
+	private Connection conn = DBUtil.getConn();
+	
+	
+	public Statement getStmt() {
+		return stmt;
+	}
+
+	public void setStmt(Statement stmt) {
+		this.stmt = stmt;
+	}
+
+	public ResultSet getRs() {
+		return rs;
+	}
+
+	public void setRs(ResultSet rs) {
+		this.rs = rs;
+	}
+
+	public Connection getConn() {
+		return conn;
+	}
+
+	public void setConn(Connection conn) {
+		this.conn = conn;
+	}
+
 	// 增加用户
 	/*
 	 * (non-Javadoc)
@@ -21,8 +50,7 @@ public class IntelligentDaoImpl implements IntelligentDao {
 	 * @see cn.it.dao.impl.IntelligentDao#add(cn.it.domain.User)
 	 */
 	public void add(User user) {
-		Statement stmt = null;
-		ResultSet rs = null;
+
 		String sql = "insert into person(person_num,person_name,person_age,person_account,person_passwork,person_position,person_cardCode)values("
 				+ user.getPerson_num()
 				+ ",'"
@@ -39,7 +67,7 @@ public class IntelligentDaoImpl implements IntelligentDao {
 				+ user.getPerson_cardCode()
 				+ "')";
 
-		Connection conn = DBUtil.getConn();
+		
 		DBUtil.executeUpdate(conn, sql);
 		DBUtil.close(conn, stmt, rs);
 
@@ -55,10 +83,8 @@ public class IntelligentDaoImpl implements IntelligentDao {
 	 * @see cn.it.dao.impl.IntelligentDao#delete(java.lang.String)
 	 */
 	public void delete(String person_id) {
-		Statement stmt = null;
-		ResultSet rs = null;
+
 		String sql = "delete from person where person_id=" + person_id;
-		Connection conn = DBUtil.getConn();
 		DBUtil.executeUpdate(conn, sql);
 		DBUtil.close(conn, stmt, rs);
 	}
@@ -75,13 +101,11 @@ public class IntelligentDaoImpl implements IntelligentDao {
 	 */
 	public User find(String person_account, String person_passwork) {
 
-		Statement stmt = null;
-		ResultSet rs = null;
+
 		User user = new User();
 		String sql = "select * from person where person_account='"
 				+ person_account + "'and person_passwork='" + person_passwork
 				+ "'";
-		Connection conn = DBUtil.getConn();
 		rs = DBUtil.executeQuery(conn, sql);
 		try {
 			while (rs.next()) {
@@ -118,17 +142,14 @@ public class IntelligentDaoImpl implements IntelligentDao {
 	 */
 	public boolean find(String Person_name) {
 
-		Statement stmt = null;
-		ResultSet rs = null;
+
 		String sql = "select * from person where person_name='" + Person_name
 				+ "'";
-
-		Connection conn = DBUtil.getConn();
 
 		rs = DBUtil.executeQuery(conn, sql);
 
 		try {
-			while (rs.next()) {
+			if (rs.next()) {
 				return true;
 			}
 		} catch (SQLException e) {
@@ -151,15 +172,12 @@ public class IntelligentDaoImpl implements IntelligentDao {
 	 */
 	public void update(User user) {
 
-		Statement stmt = null;
-		ResultSet rs = null;
 
 		String sql = "update person set person_age=" + user.getPerson_age()
 				+ ",person_name=" + "'"+user.getPerson_name()+"'" + ",person_passwork="
 				+ user.getPerson_password() + " where person_id="
 				+ user.getPerson_id();
 
-		Connection conn = DBUtil.getConn();
 		DBUtil.executeUpdate(conn, sql);
 		DBUtil.close(conn, stmt, rs);
 	}
@@ -169,22 +187,18 @@ public class IntelligentDaoImpl implements IntelligentDao {
 	 */
 	public void update(String sql) {
 
-		Statement stmt = null;
-		ResultSet rs = null;
 
-		Connection conn = DBUtil.getConn();
 		DBUtil.executeUpdate(conn, sql);
-		DBUtil.close(conn, stmt, rs);
 	}
 	
 	public ResultSet select(String sql){
-		
-		Statement stmt = null;
-		ResultSet rs = null;
 
-		Connection conn = DBUtil.getConn();
 		rs = DBUtil.executeQuery(conn, sql);
-		DBUtil.close(conn, stmt, rs);
+		
 		return rs;
+	}
+	
+	public void close(){
+		DBUtil.close(conn, stmt, rs);
 	}
 }

@@ -50,5 +50,7 @@ public interface IntelligentDao {
 	void update(String sql);
 
 	ResultSet select(String sql);
+	
+	void close();
 
 }
