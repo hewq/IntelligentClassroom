@@ -15,12 +15,12 @@
 	href="${pageContext.request.contextPath }/css/index.css" />
 <link rel="shortcut icon"
 	href="${pageContext.request.contextPath }/image/title.png">
-<script src="${pageContext.request.contextPath }/js/index.js"
+<script src="${pageContext.request.contextPath }/js/index2.js"
 	type="text/javascript"></script>
 <title>智能教室管理系统</title>
 </head>
 
-<body>
+<body onload="indexforward()">
 
 	<div id="id">
 		<div id="id1">

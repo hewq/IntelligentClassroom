@@ -110,5 +110,118 @@ body {
 	display:block;}
 .close{
 	display:none;}
+#id4{
+	position:absolute;
+	top:60px;
+	left:150px;
+	height:1000px;
+	width:500px;
+}
+#id40{
+	margin-left:250px;
+	margin-top:40px;
+	height:250px;
+	width:250px;
+}
+#id40 button{
+	margin:20px;
+	border:none;
+	height:191px;
+	width:200px;
+	background-image:url(../image/building1S.jpg);
+}
+#id40 button:hover{
+	border:none;
+	margin:0px;
+	height:239px;
+	width:250px;
+	background-image:url(../image/building1L.jpg);
+}
+#id41{
+	margin-left:600px;
+	margin-top:-240px;
+	height:250px;
+	width:250px;
+}
+#id41 button{
+	margin:20px;
+	border:none;
+	height:172px;
+	width:200px;
+	background-image:url(../image/building2S.jpg);
+}
+#id41 button:hover{
+	border:none;
+	margin:0px;
+	height:215px;
+	width:250px;
+	background-image:url(../image/building2L.jpg);
+}
+#id42{
+	margin-left:150px;
+	margin-top:-10px;
+	height:250px;
+	width:250px;
+}
+#id42 button{
+	margin:20px;
+	border:none;
+	height:200px;
+	width:200px;
+	background-image:url(../image/building3S.jpg);
+}
+#id42 button:hover{
+	border:none;
+	margin:0px;
+	height:250px;
+	width:250px;
+	background-image:url(../image/building3L.jpg);
+}
+#id43{
+	margin-left:450px;
+	margin-top:-210px;
+	height:250px;
+	width:250px;
+}
+#id43 button{
+	margin:20px;
+	border:none;
+	height:159px;
+	width:200px;
+	background-image:url(../image/building4S.jpg);
+}
+#id43 button:hover{
+	border:none;
+	margin:0px;
+	height:199px;
+	width:250px;
+	background-image:url(../image/building4L.jpg);
+}
+#id44{
+	margin-left:750px;
+	margin-top:-280px;
+	height:250px;
+	width:250px;
+}
+#id44 button{
+	margin:20px;
+	border:none;
+	height:200px;
+	width:200px;
+	background-image:url(../image/building5S.jpg);
+}
+#id44 button:hover{
+	border:none;
+	margin:0px;
+	height:250px;
+	width:250px;
+	background-image:url(../image/building5L.jpg);
+}
 
-
+#id45{
+	margin-left:890px;
+	margin-top:-550px;
+	height:61px;
+	width:330px;
+	background-image:url(../image/logo8.png);
+}

@@ -155,17 +155,17 @@ function Registerforward(){
 	window.location.replace("RegisterUIServlet");
 }
 function B1forward(){
-	window.location.replace("servlet/Building_1UIServlet");
+	window.location.replace("Building_1UIServlet");
 }
 function B2forward(){
-	window.location.replace("servlet/Building_2UIServlet");
+	window.location.replace("Building_2UIServlet");
 }
 function B3forward(){
-	window.location.replace("servlet/Building_3UIServlet");
+	window.location.replace("Building_3UIServlet");
 }
 function B4forward(){
-	window.location.replace("servlet/Building_4UIServlet");
+	window.location.replace("Building_4UIServlet");
 }
 function B5forward(){
-	window.location.replace("servlet/Building_5UIServlet");
+	window.location.replace("Building_5UIServlet");
 }
