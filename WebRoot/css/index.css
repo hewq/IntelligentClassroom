@@ -112,115 +112,101 @@ body {
 	display:none;}
 #id4{
 	position:absolute;
-	top:60px;
-	left:150px;
-	height:1000px;
-	width:500px;
+	top:130px;
+	left:250px;
+	height:519px;
+	width:1024px;
+	background-image:url(../image/glass2.jpg);
 }
 #id40{
-	margin-left:250px;
-	margin-top:40px;
-	height:250px;
-	width:250px;
-}
-#id40 button{
-	margin:20px;
+	position:absolute;
+	margin-left:150px;
+	margin-top:250px;
 	border:none;
 	height:191px;
 	width:200px;
-	background-image:url(../image/building1S.jpg);
 }
-#id40 button:hover{
+#id40:hover{
+	position:absolute;
 	border:none;
-	margin:0px;
+	margin-left:130px;
+	margin-top:230px;
 	height:239px;
 	width:250px;
-	background-image:url(../image/building1L.jpg);
 }
+
 #id41{
-	margin-left:600px;
-	margin-top:-240px;
-	height:250px;
-	width:250px;
-}
-#id41 button{
-	margin:20px;
+	position:absolute;
+	margin-left:300px;
+	margin-top:100px;
 	border:none;
 	height:172px;
 	width:200px;
-	background-image:url(../image/building2S.jpg);
 }
-#id41 button:hover{
+#id41:hover{
+	position:absolute;
 	border:none;
-	margin:0px;
+	margin-left:280px;
+	margin-top:80px;
 	height:215px;
 	width:250px;
-	background-image:url(../image/building2L.jpg);
 }
+
 #id42{
-	margin-left:150px;
-	margin-top:-10px;
-	height:250px;
-	width:250px;
-}
-#id42 button{
-	margin:20px;
+	position:absolute;
+	margin-left:400px;
+	margin-top:300px;
 	border:none;
 	height:200px;
 	width:200px;
-	background-image:url(../image/building3S.jpg);
 }
-#id42 button:hover{
+#id42:hover{
 	border:none;
-	margin:0px;
+	position:absolute;
+	margin-left:380px;
+	margin-top:280px;
 	height:250px;
 	width:250px;
-	background-image:url(../image/building3L.jpg);
 }
+
 #id43{
-	margin-left:450px;
-	margin-top:-210px;
-	height:250px;
-	width:250px;
-}
-#id43 button{
-	margin:20px;
+	position:absolute;
+	margin-left:650px;
+	margin-top:300px;
 	border:none;
 	height:159px;
 	width:200px;
-	background-image:url(../image/building4S.jpg);
 }
-#id43 button:hover{
+#id43:hover{
 	border:none;
-	margin:0px;
+	position:absolute;
+	margin-left:630px;
+	margin-top:280px;
 	height:199px;
 	width:250px;
-	background-image:url(../image/building4L.jpg);
 }
+
 #id44{
+	position:absolute;
 	margin-left:750px;
-	margin-top:-280px;
-	height:250px;
-	width:250px;
-}
-#id44 button{
-	margin:20px;
+	margin-top:150px;
 	border:none;
 	height:200px;
 	width:200px;
-	background-image:url(../image/building5S.jpg);
 }
-#id44 button:hover{
+#id44:hover{
 	border:none;
-	margin:0px;
+	position:absolute;
+	margin-left:730px;
+	margin-top:130px;
 	height:250px;
 	width:250px;
-	background-image:url(../image/building5L.jpg);
 }
 
 #id45{
-	margin-left:890px;
-	margin-top:-550px;
+	position:absolute;
+	margin-left:-85px;
+	margin-top:-50px;
 	height:61px;
 	width:330px;
 	background-image:url(../image/logo8.png);

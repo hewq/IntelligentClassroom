@@ -155,7 +155,7 @@ function Registerforward(){
 	window.location.replace("RegisterUIServlet");
 }
 function B1forward(){
-	window.location.replace("servlet/Building_1UIServlet");
+	window.open("servlet/Building_1UIServlet");
 }
 function B2forward(){
 	window.location.replace("servlet/Building_2UIServlet");

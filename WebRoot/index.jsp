@@ -65,22 +65,12 @@
 			</dl>
 		</div>
 		<div id="id4">
-			<div id="id40">
-				<button class="building" onclick="B1forward()"></button>
-			</div>
-			<div id="id41">
-				<button class="building" onclick="B2forward()"></button>
-			</div>
-			<div id="id42">
-				<button class="building" onclick="B3forward()"></button>
-			</div>
-			<div id="id43">
-				<button class="building" onclick="B4forward()"></button>
-			</div>
-			<div id="id44">
-				<button class="building" onclick="B5forward()"></button>
-			</div>
-			<div id="id45"></div>
+			<img src="image/building1S.png" id="id40" onclick="B1forward()" target="_blank"/>
+			<img src="image/building2S.png" id="id41" onclick="B2forward()"/>
+			<img src="image/building3S.png" id="id42" onclick="B3forward()"/>
+			<img src="image/building4S.png" id="id43" onclick="B4forward()"/>
+			<img src="image/building5S.png" id="id44" onclick="B5forward()"/>
+			<img src="image/logo8.png" id="id45" />
 		</div>
 	</div>
 </body>
