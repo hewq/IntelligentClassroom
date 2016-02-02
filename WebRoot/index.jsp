@@ -1,10 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ page import="cn.it.socket.*"%>
 <%
-	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
+	Server server = new Server();
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -66,10 +63,10 @@
 		</div>
 		<div id="id4">
 			<img src="image/building1S.png" id="id40" onclick="B1forward()" target="_blank"/>
-			<img src="image/building2S.png" id="id41" onclick="B2forward()"/>
-			<img src="image/building3S.png" id="id42" onclick="B3forward()"/>
-			<img src="image/building4S.png" id="id43" onclick="B4forward()"/>
-			<img src="image/building5S.png" id="id44" onclick="B5forward()"/>
+			<img src="image/building2S.png" id="id41" onclick="B2forward()" target="_blank"/>
+			<img src="image/building3S.png" id="id42" onclick="B3forward()" target="_blank"/>
+			<img src="image/building4S.png" id="id43" onclick="B4forward()" target="_blank"/>
+			<img src="image/building5S.png" id="id44" onclick="B5forward()" target="_blank"/>
 			<img src="image/logo8.png" id="id45" />
 		</div>
 	</div>

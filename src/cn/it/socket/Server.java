@@ -1,73 +1,92 @@
 package cn.it.socket;
 
 import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.BufferedWriter;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.io.*;
+
+import cn.it.exception.MessageFlagException;
 
 public class Server {
+	public static int PORT = 6543;
 
-	public static final int PORT = 12345;
-	
-	public static void main(String[] args) {
-		System.out.println("服务器启动。。。\n");
-			Server server = new Server();
-			server.init();
+	public void start() {
+		while (true)
+			listen();
 	}
 
-	public void init(){
+	public void listen() {
+		ServerSocket s = null;
+		Socket socket = null;
+		BufferedReader br = null;
+		BufferedReader brf = null;
+		PrintWriter pw = null;
+		PrintWriter pwf = null;
 		try {
-			ServerSocket serverSocket = new ServerSocket(PORT);
-			while(true){
-				//一旦有阻塞，则表示服务器与客户端获得连接
-				Socket client = serverSocket.accept();
-				//处理这次连接
-				new HandlerThread(client);
-			}
-		} catch (IOException e) {
-			System.out.println("服务器异常："+e.getMessage());
-		}
-	}
-	
-	private class HandlerThread implements Runnable{
-		
-		private Socket socket;
-		public HandlerThread(Socket client){
-			socket = client;
-			new Thread(this).start();
-		}
-		
-		public void run(){
-			try {
-				//读取客户端的数据
-				DataInputStream input = new DataInputStream(socket.getInputStream());
-				String clientInputStr = input.readUTF();//这里要注意和客户端输出流的写方法对应，否则会抛EOFException
-				
-				//处理客户端的数据
-				System.out.println("客户端发过来的内容："+clientInputStr);
-				
-				//向客户端回复信息
-				DataOutputStream out = new DataOutputStream(socket.getOutputStream());
-				System.out.println("请输入：\t");
-				//发送键盘输入的一行
-				String s = new BufferedReader(new InputStreamReader(System.in)).readLine();
-				out.writeUTF(s);
-				
-				out.close();
-				input.close();
-			} catch (IOException e) {
-				System.out.println("服务器 run 异常"+e.getMessage());
-			}finally{
-				if(socket != null)
-					try {
-						socket.close();
-					} catch (IOException e) {
-						socket = null;
-						System.out.println("服务端 finally 异常："+e.getMessage());
+			s = new ServerSocket(PORT);
+			System.out.println("ServerSocket Start:" + s);
+			socket = s.accept();
+			System.out.println("Connection accept socket:" + socket);
+
+			// 用于接收客户端发来的请求
+			br = new BufferedReader(new InputStreamReader(
+					socket.getInputStream()));
+			pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(
+					socket.getOutputStream())), true);
+			pwf = new PrintWriter(
+					new BufferedWriter(new FileWriter("buf.txt")), true);
+			brf = new BufferedReader(new FileReader("buf.txt"));
+			int i = 0;
+			String ack = null;
+			while (true) {
+				int bte = br.read();
+				if (bte == 'X') {
+					String str = brf.readLine();
+					String flag = str.substring(0, 2);
+					String [] gatewayMsg = str.split(":");
+					String msg = gatewayMsg[0];
+					String roomNum = gatewayMsg[1];
+					if (flag.equals("11")) { // “11”表示灯的信息,接收完毕返回111
+						ack = "111";
+						pw.println(ack);
+						pw.flush();
+					} else if (flag.equals("20")) { // “20”表示RFID的信息,接收完毕返回001
+						ack = "001";
+						pw.println(ack);
+						pw.flush();
+					} else if (flag.equals("10")) { // “10”表示红外的信息,接收完毕不返回确认
+						pw.println(ack);
+						pw.flush();
+					} else {
+						ack = "999";
+						pw.println(ack);
+						pw.flush();
+						throw new MessageFlagException("接收信息有误!");
 					}
+				} else {
+					System.out.print((char) bte);
+					Thread.sleep(1000);
+					pwf.print((char) bte);
+					pwf.flush();
+					i++;
+				}
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			System.out.println("Close.....");
+			try {
+				br.close();
+				pw.close();
+				socket.close();
+				s.close();
+			} catch (Exception e2) {
+
 			}
 		}
 	}

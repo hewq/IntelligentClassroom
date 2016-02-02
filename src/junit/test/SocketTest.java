@@ -10,12 +10,11 @@ public class SocketTest {
 	@Test
 	public void serverTest(){
 		Server server = new Server();
-		server.main(null);
+		server.start();
 	}
 	
 	@Test
 	public void clientTest(){
 		Client client = new Client();
-		client.main(null);
 	}
 }
