@@ -7,13 +7,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cn.it.multiThread.ServerListen;
 import cn.it.socket.Server;
 
 public class StartServer extends HttpServlet {
 
-	public StartServer(){
-		Server server = new Server();
-		server.start();
+//	public StartServer(){
+//		ServerListen SL = new ServerListen();
+//		SL.start();
+//	}
+	
+	public void init() throws ServletException{
+		
+		super.init();
+		ServerListen SL = new ServerListen();
+		SL.start();
 	}
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
