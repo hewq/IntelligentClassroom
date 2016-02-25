@@ -26,6 +26,7 @@ public class MultiClientThread {
 		int counter = 1;
 		try {
 			 ss = new ServerSocket(PORT);
+			 System.out.println(".................................................................................................................ServerSocket Start:"+ss);
 			 while(true) {
 			       s = ss.accept();
 			      System.out.println("第 "+(counter++)+" 个连接");

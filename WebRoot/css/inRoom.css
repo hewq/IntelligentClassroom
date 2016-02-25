@@ -157,6 +157,7 @@ body {
 	top: 55px;
 	left: 152px;
 	background-color: #f5f6f7;
+	background:url(../image/light4.jpg) right no-repeat;
 }
 
 #id4 p {
@@ -170,31 +171,46 @@ body {
 	position: absolute;
 	top: 110px;
 	left: 152px;
-	border: solid 1px #dddddd;
+	border: solid 1px #dadfe2;
 	border-radius: 5px;
 	margin-left: 30px;
-	width: 350px;
-	height: 420px;
+	width: 1050px;
+	height: 520px;
 }
 .inRoomTable1{
 	margin:15px;
-	width:320px;
-	height:320px;
+	width:1000px;
+	height:420px;
 	border-collapse:collapse;
-	border:solid #dddddd 1px;
+	border:solid #dadfe2 1px;
 }
 .inRoomTable1 tr{
-	border:solid #dddddd 1px;
+	border:solid #dadfe2 1px;
 }
 .inRoomTable1 tr td{
-	width:32px;
-	height:32px;
-	border:solid #dddddd 1px;
+	width:100px;
+	height:42px;
+	border:solid #dadfe2 1px;
 }
 #id51{
-	width:350px;
-	height:35px;
+	width:1050px;
+	height:49px;
 	background-color:#13c4a5;
+}
+#id51button1{
+	margin:-8px;
+	margin-left:10px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/allon.jpg");
+	border-radius:24px;
+}
+#id51button2{
+	margin:-18px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/alloff.jpg");
+	border-radius:24px;
 }
 #id51form1{
 	padding:8px;
@@ -204,39 +220,43 @@ body {
 	padding-left:90px;
 }
 #id6{
+	background-color:#101a23;
 	position: absolute;
-	top: 110px;
-	left: 502px;
+	top: 60px;
+	left: 580px;
 	border: solid 1px #dddddd;
 	border-radius: 5px;
 	margin-left: 30px;
-	width: 350px;
+	width: 650px;
 	height: 500px;
+	display:block;
+	color:#13c4a5;
 }
 #id61{
-	width:350px;
+	width:650px;
 	height:35px;
-	background-color:#13c4a5;
+	background-color:#16abf6;;
 }
 #id61 span{
 	position: absolute;
 	top:5px;
-	left:165px;
+	left:320px;
 	font-family:"宋体";
 	color:#e2f8f4;
 }
 .inRoomTable2{
 	text-align:center;
 	margin:15px;
-	width:320px;
+	width:620px;
 	height:80px;
 	border-collapse:collapse;
+	color:#16abf6;
 }
 .inRoomTable2 tr{
 	border:solid #dddddd 1px;
 }
 .inRoomTable2 tr td{
-	width:64px;
+	width:80px;
 	border:solid #dddddd 1px;
 }
 #id63{
@@ -244,7 +264,7 @@ body {
 	top: 130px;
 	left: -15px;
 	margin-left: 30px;
-	width: 320px;
+	width: 620px;
 	height: 350px;
 	overflow: auto;
 	word-break: break-all;
@@ -253,13 +273,16 @@ body {
 	position:absolute;
 	text-align:center;
 	margin:0px;
-	width:320px;
+	width:620px;
 	height:50px;
 	border-collapse:collapse;
+	color:#0b0c10;
+	font-weight:bold;
+	color:#16abf6;
 }
 /* 设置滚动条的样式 */
 ::-webkit-scrollbar {
-	width: 4px;
+	width: 0px;
 } 
 /* 滚动槽 */
 ::-webkit-scrollbar-track {
@@ -288,4 +311,29 @@ body {
 }
 .show{
 	display:block;
+	width:105px;
+	height:39px;
+}
+#b1{
+	width:45px;
+	height:50px;
+	border:none #dddddd 1px;
+	background-image:url(../image/lighton.jpg)
+}
+.b1{
+	width:45px;
+	height:50px;
+	border:none #dddddd 1px;
+	background-image:url(../image/lightoff.jpg)
+}
+#b2{
+	width:39px;
+	height:38px;
+	background-image:url(../image/settings1.jpg)
+}
+.on{
+	background-image:url(../image/on2.jpg)
+}
+.off{
+	background-image:url(../image/off2.jpg)
 }

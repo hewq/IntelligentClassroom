@@ -25,6 +25,9 @@ public class Server implements Runnable{
 	private Socket socket = null;
 	private MultiClientThread MCT = new MultiClientThread();
 
+	public Server(){
+		
+	}
 	public Server(Socket s){
 		socket = s;
 	}
@@ -65,7 +68,7 @@ public class Server implements Runnable{
 			brf = new BufferedReader(new FileReader("buf.txt"));
 			int i = 0;
 			String ack = null;
-			while (i < 21) {
+			while (i < 21) {		//当前只接收6个灯
 				int bte = br.read();
 				if (bte == 'X') {
 					String str = brf.readLine();

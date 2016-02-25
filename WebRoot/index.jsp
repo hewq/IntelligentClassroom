@@ -24,8 +24,10 @@
 			<div id="name">智能教室</div>
 		</div>
 		<div id="id2">
-			<form>
-				<input />
+			<form
+				action="${pageContext.request.contextPath }/servlet/SelectServlet">
+				<input type="text" name="select" value="输入房间号" /> <span>${error
+					}</span>
 			</form>
 			<select onchange="window.location=this.value;" name="select">
 				<option value="1">游客</option>

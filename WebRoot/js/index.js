@@ -11,8 +11,6 @@ function show() {
 	}else{
 		divNode.className = "open";
 	}
-
-
 }
 function hidden(){
 	var aNode = event.srcElement;
@@ -168,4 +166,13 @@ function B4forward(){
 }
 function B5forward(){
 	window.location.replace("servlet/Building_5UIServlet");
+}
+
+function OnorOff() {
+	var aNode = event.srcElement;
+	if(aNode.className == "show off"){
+		aNode.className = "show on";
+	}else{
+		aNode.className = "show off";
+	}
 }

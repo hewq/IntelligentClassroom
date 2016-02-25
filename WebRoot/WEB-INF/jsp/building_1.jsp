@@ -23,8 +23,10 @@
 			<div id="name">智能教室</div>
 		</div>
 		<div id="id2">
-			<form>
-				<input />
+			<form
+				action="${pageContext.request.contextPath }/servlet/SelectServlet">
+				<input type="text" name="select" value="输入房间号" /> <span>${error
+					}</span>
 			</form>
 			<select>
 				<option>游客</option>
@@ -104,7 +106,9 @@
 				%>
 				<tr>
 					<td class="td1">
-						<%-- 打印房间号 --%> <%=rs.getString("room_num")%></td>
+						<%-- 打印房间号 --%> <a class="a_room"
+						href="${pageContext.request.contextPath }/servlet/InRoomServlet?room_num=<%=rs.getString("room_num")%>&room_building=<%=rs.getString("room_building")%>"><%=rs.getString("room_num")%></a>
+					</td>
 					<td class="td1"><%=rs.getString("room_building")%></td>
 					<td class="td1"><%=rs.getString("room_floor")%></td>
 					<td class="td1"><%=rs.getString("room_areaX")%>*<%=rs.getString("room_areaX")%>

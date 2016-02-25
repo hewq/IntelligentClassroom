@@ -73,136 +73,136 @@
 					action="${pageContext.request.contextPath }/servlet/AllOnServlet"
 					id="formallon">
 					<button id="id51button1"  name=room_num
-						value="${room_num }">ALL ON</button>
+						value="${room_num }"></button>
 				</form>
 				<form id="id51form2"
 					action="${pageContext.request.contextPath }/servlet/AllOffServlet"
 					id="formallon">
 					<button id="id51button2"  name=room_num
-						value="${room_num }">ALL OFF</button>
+						value="${room_num }"></button>
 				</form>
 			</div>
 			<form action="${pageContext.request.contextPath }/servlet/UpdateLightStateServlet">
 			<table class="inRoomTable1">
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,1:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,1:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,1:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,1:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,1:${room_num }" >灯</button>讲</td>
-					<td><button class="close" name="lightLocation" value="6,1:${room_num }" >灯</button>台</td>
-					<td><button class="close" name="lightLocation" value="7,1:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,1:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,1:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,1:${room_num }">灯</button></td>
+					<td><button class="close " name="lightLocation" value="1,1:${room_num }" onMouseOver="OnorOff()" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,1:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,1:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,1:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,1:${room_num }" ></button>讲</td>
+					<td><button class="close" name="lightLocation" value="6,1:${room_num }" ></button>台</td>
+					<td><button class="close" name="lightLocation" value="7,1:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,1:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,1:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,1:${room_num }"></button></td>
 				</tr>
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,2:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,2:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,2:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,2:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,2:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="6,2:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="7,2:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,2:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,2:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,2:${room_num }" >灯</button></td>
+					<td><button class="close" name="lightLocation" value="1,2:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,2:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,2:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,2:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,2:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="6,2:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="7,2:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,2:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,2:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,2:${room_num }" ></button></td>
 				</tr>
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,3:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,3:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,3:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,3:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,3:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="6,3:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="7,3:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,3:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,3:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,3:${room_num }">灯</button></td>
+					<td><button class="close" name="lightLocation" value="1,3:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,3:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,3:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,3:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,3:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="6,3:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="7,3:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,3:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,3:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,3:${room_num }"></button></td>
 				</tr>
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,4:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,4:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,4:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,4:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,4:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="6,4:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="7,4:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,4:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,4:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,4:${room_num }" >灯</button></td>
+					<td><button class="close" name="lightLocation" value="1,4:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,4:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,4:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,4:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,4:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="6,4:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="7,4:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,4:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,4:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,4:${room_num }" ></button></td>
 				</tr>
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,5:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,5:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,5:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,5:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,5:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="6,5:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="7,5:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,5:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,5:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,5:${room_num }">灯</button></td>
+					<td><button class="close" name="lightLocation" value="1,5:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,5:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,5:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,5:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,5:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="6,5:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="7,5:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,5:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,5:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,5:${room_num }"></button></td>
 				</tr>
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,6:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,6:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,6:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,6:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,6:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="6,6:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="7,6:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,6:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,6:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,6:${room_num }" >灯</button></td>
+					<td><button class="close" name="lightLocation" value="1,6:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,6:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,6:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,6:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,6:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="6,6:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="7,6:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,6:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,6:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,6:${room_num }" ></button></td>
 				</tr>
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,7:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,7:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,7:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,7:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,7:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="6,7:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="7,7:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,7:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,7:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,7:${room_num }">灯</button></td>
+					<td><button class="close" name="lightLocation" value="1,7:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,7:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,7:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,7:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,7:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="6,7:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="7,7:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,7:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,7:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,7:${room_num }"></button></td>
 				</tr>
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,8:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,8:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,8:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,8:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,8:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="6,8:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="7,8:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,8:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,8:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,8:${room_num }" >灯</button></td>
+					<td><button class="close" name="lightLocation" value="1,8:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,8:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,8:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,8:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,8:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="6,8:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="7,8:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,8:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,8:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,8:${room_num }" ></button></td>
 				</tr>
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,9:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,9:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,9:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,9:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,9:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="6,9:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="7,9:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,9:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,9:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,9:${room_num }">灯</button></td>
+					<td><button class="close" name="lightLocation" value="1,9:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,9:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,9:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,9:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,9:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="6,9:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="7,9:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,9:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,9:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,9:${room_num }"></button></td>
 				</tr>
 				<tr>
-					<td><button class="close" name="lightLocation" value="1,10:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="2,10:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="3,10:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="4,10:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="5,10:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="6,10:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="7,10:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="8,10:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="9,10:${room_num }" >灯</button></td>
-					<td><button class="close" name="lightLocation" value="10,10:${room_num }">灯</button></td>
+					<td><button class="close" name="lightLocation" value="1,10:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="2,10:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="3,10:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="4,10:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="5,10:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="6,10:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="7,10:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="8,10:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="9,10:${room_num }" ></button></td>
+					<td><button class="close" name="lightLocation" value="10,10:${room_num }"></button></td>
 				</tr>
 			</table>
 			</form>
@@ -318,8 +318,8 @@
 						<td class="td1"><%=rs.getString("lights_num4room")%></td>
 						<td class="td1"><%=rs.getString("lights_location")%></td>
 						<td class="td1"><%=rs.getString("lights_range")%></td>
-						<td class="td1"><%=rs.getString("lights_state")%></td>
-						<td class="td1"><button>setting</button>
+						<td class="td1"><button id="b1"></button><%=rs.getString("lights_state")%></td>
+						<td class="td1"><button id="b2"></button>
 						</td>
 					</tr>
 					<%
