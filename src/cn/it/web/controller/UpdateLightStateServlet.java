@@ -101,7 +101,7 @@ public class UpdateLightStateServlet extends HttpServlet {
 			}
 			light = alllight.substring(4);
 			Client client = new Client(light,roomNum);
-			// client.start();
+			client.start();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
