@@ -16,6 +16,7 @@ import java.io.*;
 
 import cn.it.exception.MessageFlagException;
 import cn.it.multiThread.MultiClientThread;
+import cn.it.offline.controller.ProcessingLights;
 
 public class Server implements Runnable{
 	public static int PORT = 6543;
@@ -76,10 +77,14 @@ public class Server implements Runnable{
 					String [] gatewayMsg = str.split(":");
 					String msg = gatewayMsg[0];
 					String roomNum = gatewayMsg[1];
+					String message = str.substring(2);
 					if (flag.equals("11")) { // “11”表示灯的信息,接收完毕返回111
 						ack = "111";
 						pw.println(ack);
 						pw.flush();
+						
+						ProcessingLights pl = new ProcessingLights(message);
+						pl.processing();
 					} else if (flag.equals("20")) { // “20”表示RFID的信息,接收完毕返回001
 						ack = "001";
 						pw.println(ack);
