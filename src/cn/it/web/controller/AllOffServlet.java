@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 import cn.it.dao.IntelligentDao;
 import cn.it.dao.impl.IntelligentDaoImpl;
 import cn.it.socket.Client;
@@ -26,7 +27,7 @@ public class AllOffServlet extends HttpServlet {
 		String value = null;
 		String alllight = null;
 		String light = null;
-		String room_num = request.getParameter("room_num");
+	    String room_num = request.getParameter("room_num");
 
 		String sql = "update lights set lights_state=0 where lights_room=(select room_id from room where room_num = "
 				+ "'" + room_num + "'" + ")";
@@ -58,15 +59,12 @@ public class AllOffServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		String room_building = room_num.substring(0, 1);
-		request.setAttribute("room_num", room_num);
-		request.setAttribute("room_building", room_building);
-		request.getRequestDispatcher("/WEB-INF/jsp/inRoom.jsp").forward(
-				request, response);
+		response.sendRedirect("/IntelligentClassroom/servlet/InRoomUIServlet?room_num="+room_num+"&room_building="+room_building);
 	}
+
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		doGet(request, response);
 	}
-
 }

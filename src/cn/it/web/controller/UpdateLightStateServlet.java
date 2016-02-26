@@ -90,10 +90,8 @@ public class UpdateLightStateServlet extends HttpServlet {
 					map.put(lights_num4room, lightState);
 				}
 			}
-			request.setAttribute("room_num", roomNum);
-			request.setAttribute("room_building", roomBuilding);
-			request.getRequestDispatcher("/WEB-INF/jsp/inRoom.jsp").forward(
-					request, response);
+			response.sendRedirect("/IntelligentClassroom/servlet/InRoomUIServlet?room_num="
+					+ roomNum + "&room_building=" + roomBuilding);
 			for(int i = 0;i < map.size();i++){
 				key = String.valueOf(i);
 				value = map.get(key);

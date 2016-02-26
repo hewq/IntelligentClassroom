@@ -60,10 +60,8 @@ public class AllOnServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		String room_building = room_num.substring(0, 1);
-		request.setAttribute("room_num", room_num);
-		request.setAttribute("room_building", room_building);
-		request.getRequestDispatcher("/WEB-INF/jsp/inRoom.jsp").forward(
-				request, response);
+		response.sendRedirect("/IntelligentClassroom/servlet/InRoomUIServlet?room_num="
+				+ room_num + "&room_building=" + room_building);
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)

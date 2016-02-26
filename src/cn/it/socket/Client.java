@@ -22,6 +22,7 @@ public class Client {
 	}
 
 	public void start() {
+		/*
 		Socket socket = null;
 		BufferedReader br = null;
 		PrintWriter pw = null;
@@ -55,5 +56,6 @@ public class Client {
 				e.printStackTrace();
 			}
 		}
+		*/
 	}
 }
