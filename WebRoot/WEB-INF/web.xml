@@ -246,6 +246,246 @@
     <servlet-class>cn.it.web.controller.StartServer</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  <servlet>
+    <servlet-name>Building_1F1UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_1F1UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_1F2UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_1F2UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_1F3UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_1F3UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_1F4UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_1F4UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_1F5UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_1F5UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_1F6UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_1F6UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_2F1UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_2F1UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_2F2UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_2F2UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_2F3UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_2F3UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_2F4UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_2F4UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_2F5UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_2F5UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_2F6UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_2F6UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_3F1UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_3F1UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_3F2UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_3F2UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_3F3UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_3F3UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_3F4UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_3F4UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_3F5UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_3F5UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_3F6UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_3F6UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_4F1UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_4F1UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_4F2UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_4F2UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_4F3UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_4F3UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_4F4UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_4F4UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_4F5UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_4F5UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_4F6UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_4F6UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_5F1UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_5F1UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_5F2UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_5F2UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_5F3UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_5F3UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_5F4UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_5F4UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_5F5UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_5F5UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_5F6UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_5F6UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoomALLUILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.RoomALLUILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoomF1UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.RoomF1UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoomF2UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.RoomF2UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoomF3UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.RoomF3UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoomF4UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.RoomF4UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoomF5UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.RoomF5UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoomF6UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.RoomF6UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IndexUILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.IndexUILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InRoomUILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.InRoomUILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectLogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.controller.SelectLogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoomUILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.RoomUILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_1UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_1UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_2UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_2UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_3UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_3UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_4UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_4UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Building_5UILogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.Building_5UILogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InRoomLogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.UILogout.InRoomLogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MessageUIServlet</servlet-name>
+    <servlet-class>cn.it.web.UI.MessageUIServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -496,6 +736,198 @@
   <servlet-mapping>
     <servlet-name>StartServer</servlet-name>
     <url-pattern>/servlet/StartServer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_1F1UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_1F1UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_1F2UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_1F2UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_1F3UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_1F3UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_1F4UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_1F4UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_1F5UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_1F5UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_1F6UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_1F6UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_2F1UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_2F1UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_2F2UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_2F2UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_2F3UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_2F3UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_2F4UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_2F4UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_2F5UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_2F5UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_2F6UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_2F6UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_3F1UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_3F1UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_3F2UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_3F2UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_3F3UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_3F3UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_3F4UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_3F4UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_3F5UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_3F5UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_3F6UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_3F6UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_4F1UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_4F1UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_4F2UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_4F2UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_4F3UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_4F3UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_4F4UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_4F4UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_4F5UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_4F5UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_4F6UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_4F6UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_5F1UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_5F1UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_5F2UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_5F2UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_5F3UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_5F3UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_5F4UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_5F4UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_5F5UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_5F5UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_5F6UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_5F6UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoomALLUILogoutServlet</servlet-name>
+    <url-pattern>/servlet/RoomALLUILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoomF1UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/RoomF1UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoomF2UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/RoomF2UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoomF3UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/RoomF3UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoomF4UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/RoomF4UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoomF5UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/RoomF5UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoomF6UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/RoomF6UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexUILogoutServlet</servlet-name>
+    <url-pattern>/servlet/IndexUILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InRoomUILogoutServlet</servlet-name>
+    <url-pattern>/servlet/InRoomUILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectLogoutServlet</servlet-name>
+    <url-pattern>/servlet/SelectLogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoomUILogoutServlet</servlet-name>
+    <url-pattern>/servlet/RoomUILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_1UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_1UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_2UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_2UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_3UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_3UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_4UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_4UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Building_5UILogoutServlet</servlet-name>
+    <url-pattern>/servlet/Building_5UILogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InRoomLogoutServlet</servlet-name>
+    <url-pattern>/servlet/InRoomLogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageUIServlet</servlet-name>
+    <url-pattern>/servlet/MessageUIServlet</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

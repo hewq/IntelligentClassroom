@@ -14,12 +14,34 @@ import cn.it.utils.WebUtils;
 
 public class RegisterUIServlet extends HttpServlet {
 
-	private Map errors = new HashMap();
+	private Map<String,String> errors = new HashMap<String,String>();
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		RegisterForm form = new RegisterForm();
 		form.init();
 		errors = form.getErrors();
+		String flag = request.getParameter("flag");
+		if(!(flag == null)){
+			String person_num =  request.getParameter("person_num");
+			String person_name =  request.getParameter("person_name");
+			String person_age =  request.getParameter("person_age");
+			String person_account =  request.getParameter("person_account");
+			String person_password =  request.getParameter("person_password");
+			String person_password2 =  request.getParameter("person_password2");
+			String person_power =  request.getParameter("person_power");
+			String person_cardCode =  request.getParameter("person_cardCode");
+			
+			errors.put("person_num", person_num);
+			errors.put("person_name", person_name);
+			errors.put("person_age", person_age);
+			errors.put("person_account", person_account);
+			errors.put("person_password", person_password);
+			errors.put("person_password2", person_password2);
+			errors.put("person_power", person_power);
+			errors.put("person_cardCode", person_cardCode);
+		}
+		
+		request.setAttribute("form", form);
 		request.getRequestDispatcher("/WEB-INF/jsp/register.jsp").forward(request, response);
 	}
 

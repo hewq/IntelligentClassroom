@@ -37,7 +37,6 @@ public class MultiClientThread {
 			e.printStackTrace();
 		}finally{
 			try {
-				ss.close();
 				s.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block

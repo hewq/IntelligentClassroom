@@ -155,9 +155,7 @@ public class IntelligentDaoImpl implements IntelligentDao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} finally {
-			DBUtil.close(conn, stmt, rs);
-		}
+		} 
 		return false;
 	}
 

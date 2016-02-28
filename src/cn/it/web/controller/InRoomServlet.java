@@ -16,7 +16,7 @@ public class InRoomServlet extends HttpServlet {
 		String room_building = request.getParameter("room_building");
 		request.setAttribute("room_num", room_num);
 		request.setAttribute("room_building", room_building);
-		request.getRequestDispatcher("/WEB-INF/jsp/inRoom.jsp").forward(request, response);
+		response.sendRedirect(request.getContextPath()+"/servlet/InRoomUIServlet?room_num="+room_num+"&room_building="+room_building);
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)

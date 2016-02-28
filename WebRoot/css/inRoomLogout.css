@@ -1,0 +1,389 @@
+/* CSS Document */
+body {
+	overflow: hidden;
+}
+
+#id {
+	cellspacing: 0px;
+	cellpadding: 0px;
+}
+
+#id1 {
+	position: relative;
+	width: 150px;
+	height: 60px;
+	border: solid;
+	margin: -8px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	border-width: thin;
+	border-style: solid;
+	border-color: #CCCCCC;
+}
+
+#name {
+	position: absolute;
+	font-family: "宋体";
+	font-size: 28px;
+	color: #22BAA0;
+	font-style: italic;
+	font-weight: bold;
+	left: 25px;
+	top: 10px;
+}
+
+#id2 {
+	position: relative;
+	width: 1400px;
+	float: left;
+	border-bottom: 1px solid #CCCCCC;
+	margin-top: -16px;
+}
+
+#id2 input {
+	position: absolute;
+	left: 180px;
+	top: -24px;
+}
+
+#id2 span{
+	position:absolute;
+	left:380px;
+	top:-24px;
+}
+
+#id2 select {
+	position: absolute;
+	right: 60px;
+	top: -24px;
+}
+
+#id3 {
+	position: relative;
+	width: 152px;
+	height: 610px;
+	background-color: #325269;
+	margin-left: -8px;
+	padding-top: 5px;
+}
+
+.icon1 {
+	position: absolute;
+	top: 30px;
+	width: 150px;
+	height: 40px;
+	left: 25px;
+}
+
+.icon1 a {
+	color: #2e2e2e;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+}
+
+.icon1 a:link,.icon1 a:visited {
+	text-decoration: none;
+}
+
+.icon1 a:hover {
+	text-decoration: blink;
+	color: #ffffff;
+}
+
+.icon2 {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	left: 25px;
+	top: 70px;
+}
+
+.icon2:hover  ~ dd div {
+	display: block;
+}
+
+.icon2 a {
+	color: #2e2e2e;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+}
+
+.icon2 a:link,.icon2 a:visited {
+	text-decoration: none;
+}
+
+.icon2 a:hover {
+	text-decoration: blink;
+	color: #ffffff;
+}
+
+.menv03 {
+	margin-top: 105px;
+	margin-left: 75px;
+}
+
+.sideleft {
+	display: none;
+}
+
+.a {
+	font-size: 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.a:hover {
+	color: #888888;
+}
+
+.open {
+	display: block;
+}
+
+.close {
+	display: none;
+}
+
+#id4 {
+	position: absolute;
+	width: 1300px;
+	height: 630px;
+	top: 55px;
+	left: 152px;
+	background-color: #f5f6f7;
+	background:url(../image/light4.jpg) right no-repeat;
+}
+
+#id4 p {
+	font-weight: bold;
+	color: #656565;
+	font-size: 20px;
+	margin-left: 30px;
+}
+
+#id5 {
+	position: absolute;
+	top: 110px;
+	left: 152px;
+	border: solid 1px #dadfe2;
+	border-radius: 5px;
+	margin-left: 30px;
+	width: 1050px;
+	height: 520px;
+}
+.inRoomTable1{
+	margin:15px;
+	width:1000px;
+	height:420px;
+	border-collapse:collapse;
+	border:solid #dadfe2 1px;
+}
+.inRoomTable1 tr{
+	border:solid #dadfe2 1px;
+}
+.inRoomTable1 tr td{
+	width:100px;
+	height:42px;
+	border:solid #dadfe2 1px;
+}
+#id51{
+	width:1050px;
+	height:49px;
+	background-color:#13c4a5;
+}
+#id51button1{
+	margin:1px;
+	margin-left:10px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/allon.jpg");
+	border-radius:24px;
+}
+#id51button2{
+	margin-left:8px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/alloff.jpg");
+	border-radius:24px;
+}
+#id51button3{
+	margin-left:980px;
+	margin-top:-50px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/attribute.jpg");
+	border-radius:24px;
+}
+#id51button3:hover{
+	filter:Alpha(Opacity=70);opacity:0.7;-moz-opacity:0.7;
+	margin-left:980px;
+	margin-top:-50px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/attribute.jpg");
+	border-radius:24px;
+}
+#id51form1{
+	padding:8px;
+}
+#id51form2{
+	margin-top:-45px;
+	padding-left:90px;
+}
+.id6hidden{
+	background-color:#101a23;
+	position: absolute;
+	top: 120px;
+	left: 350px;
+	border: solid 1px #dddddd;
+	border-radius: 5px;
+	margin-left: 30px;
+	width: 650px;
+	height: 500px;
+	display:none;
+	color:#13c4a5;
+}
+.id6show{
+	filter:Alpha(Opacity=70);opacity:0.9;-moz-opacity:0.9;
+	background-color:#101a23;
+	position: absolute;
+	top: 120px;
+	left: 350px;
+	border: solid 1px #dddddd;
+	border-radius: 5px;
+	margin-left: 30px;
+	width: 650px;
+	height: 500px;
+	display:block;
+	color:#13c4a5;
+}
+#id61{
+	width:650px;
+	height:35px;
+	background-color:#16abf6;;
+}
+#id61 span{
+	position: absolute;
+	top:5px;
+	left:320px;
+	font-family:"宋体";
+	color:#e2f8f4;
+}
+.inRoomTable2{
+	text-align:center;
+	margin:15px;
+	width:620px;
+	height:80px;
+	border-collapse:collapse;
+	color:#16abf6;
+}
+.inRoomTable2 tr{
+	border:solid #dddddd 1px;
+}
+.inRoomTable2 tr td{
+	width:80px;
+	border:solid #dddddd 1px;
+}
+#id63{
+	position:absolute;
+	top: 130px;
+	left: -15px;
+	margin-left: 30px;
+	width: 620px;
+	height: 350px;
+	overflow: auto;
+	word-break: break-all;
+}
+.inRoomTable3{
+	position:absolute;
+	text-align:center;
+	margin:0px;
+	width:620px;
+	height:50px;
+	border-collapse:collapse;
+	color:#0b0c10;
+	font-weight:bold;
+	color:#16abf6;
+}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+	width: 0px;
+} 
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+} 
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255, 0, 0, 0.4);
+}
+.inRoomTable3 tr{
+	border:solid #dddddd 1px;
+}
+.inRoomTable3 tr td{
+	width:64px;
+	border:solid #dddddd 1px;
+}
+.close{
+	display:none;
+}
+.show{
+	display:block;
+	width:105px;
+	height:39px;
+}
+.showno{
+	display:block;
+	width:41px;
+	height:41px;
+	margin-left:30px;
+	border-radius:20px;
+	background-image:url(../image/no.jpg);
+}
+.showyes{
+	display:block;
+	width:41px;
+	height:41px;
+	margin-left:30px;
+	border-radius:20px;
+	background-image:url(../image/yes.jpg);
+}
+.lighton{
+	width:45px;
+	height:50px;
+	border:none #dddddd 1px;
+	background-image:url(../image/lighton.jpg);
+}
+.lightoff{
+	width:35px;
+	height:50px;
+	border:none #dddddd 1px;
+	background-image:url(../image/lightoff.jpg);
+}
+.b2{
+	width:39px;
+	height:38px;
+	background-image:url(../image/settings1.jpg);
+}
+.on{
+	background-image:url(../image/on2.jpg);
+}
+.off{
+	background-image:url(../image/off2.jpg);
+}
+.desk{
+	background-image:url(../image/desk.jpg);
+}

@@ -376,11 +376,14 @@ body {
 .b2{
 	width:39px;
 	height:38px;
-	background-image:url(../image/settings1.jpg)
+	background-image:url(../image/settings1.jpg);
 }
 .on{
-	background-image:url(../image/on2.jpg)
+	background-image:url(../image/on2.jpg);
 }
 .off{
-	background-image:url(../image/off2.jpg)
+	background-image:url(../image/off2.jpg);
+}
+.desk{
+	background-image:url(../image/desk.jpg);
 }

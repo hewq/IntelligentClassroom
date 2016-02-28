@@ -110,7 +110,9 @@
 				%>
 				<tr>
 					<td class="td1">
-						<%-- 打印房间号 --%> <%=rs.getString("room_num")%></td>
+						<%-- 打印房间号 --%> <a class="a_room"
+						href="${pageContext.request.contextPath }/servlet/InRoomServlet?room_num=<%=rs.getString("room_num")%>&room_building=<%=rs.getString("room_building")%>"><%=rs.getString("room_num")%></a>
+					</td>
 					<td class="td1"><%=rs.getString("room_building")%></td>
 					<td class="td1"><%=rs.getString("room_floor")%></td>
 					<td class="td1"><%=rs.getString("room_areaX")%>*<%=rs.getString("room_areaX")%>

@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
 			return;
 		}else{
 			request.setAttribute("message", "用户名或密码错误！");
-			request.getRequestDispatcher("/message.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/jsp/message.jsp").forward(request, response);
 		}
 		
 	}

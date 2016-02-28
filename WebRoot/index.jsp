@@ -12,7 +12,7 @@
 	href="${pageContext.request.contextPath }/css/index.css" />
 <link rel="shortcut icon"
 	href="${pageContext.request.contextPath }/image/title.png">
-<script src="${pageContext.request.contextPath }/js/index.js"
+<script src="${pageContext.request.contextPath }/js/indexlogout.js"
 	type="text/javascript"></script>
 <title>智能教室管理系统</title>
 </head>
@@ -25,7 +25,7 @@
 		</div>
 		<div id="id2">
 			<form
-				action="${pageContext.request.contextPath }/servlet/SelectServlet">
+				action="${pageContext.request.contextPath }/servlet/SelectLogoutServlet">
 				<input type="text" name="select" value="输入房间号" /> <span>${error
 					}</span>
 			</form>
@@ -41,24 +41,24 @@
 			<dl class="list">
 				<dt class="icon1">
 					<a
-						href="${pageContext.request.contextPath }/servlet/IndexUIServlet">总览</a>
+						href="${pageContext.request.contextPath }/servlet/IndexUILogoutServlet">总览</a>
 				</dt>
 				<dt class="icon2">
-					<a href="${pageContext.request.contextPath }/servlet/RoomUIServlet"
+					<a href="${pageContext.request.contextPath }/servlet/RoomUILogoutServlet"
 						onMouseOver="show()" onMouseOut="hidden()">房间</a>
 				</dt>
 				<dd class="menv03">
 					<div class="sideleft">
 						<a class="a"
-							href="${pageContext.request.contextPath }/servlet/Building_1UIServlet">1号楼</a><br />
+							href="${pageContext.request.contextPath }/servlet/Building_1UILogoutServlet">1号楼</a><br />
 						<a class="a"
-							href="${pageContext.request.contextPath }/servlet/Building_2UIServlet">2号楼</a><br />
+							href="${pageContext.request.contextPath }/servlet/Building_2UILogoutServlet">2号楼</a><br />
 						<a class="a"
-							href="${pageContext.request.contextPath }/servlet/Building_3UIServlet">3号楼</a><br />
+							href="${pageContext.request.contextPath }/servlet/Building_3UILogoutServlet">3号楼</a><br />
 						<a class="a"
-							href="${pageContext.request.contextPath }/servlet/Building_4UIServlet">4号楼</a><br />
+							href="${pageContext.request.contextPath }/servlet/Building_4UILogoutServlet">4号楼</a><br />
 						<a class="a"
-							href="${pageContext.request.contextPath }/servlet/Building_5UIServlet">5号楼</a><br />
+							href="${pageContext.request.contextPath }/servlet/Building_5UILogoutServlet">5号楼</a><br />
 					</div>
 				</dd>
 			</dl>

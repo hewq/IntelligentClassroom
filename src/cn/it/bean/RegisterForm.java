@@ -94,8 +94,8 @@ public class RegisterForm {
 		errors.put("person_account", "3-8位字母。");
 		errors.put("person_password", "至少6位数字或字母。");
 		errors.put("person_password2", "至少6位数字或字母。");
-		errors.put("person_num", "1位数字。");
-		errors.put("person_num", "9位数字。");
+		errors.put("person_power", "1位数字。");
+		errors.put("person_cardCode", "9位数字。");
 	}
 	
 	public boolean validate() {
