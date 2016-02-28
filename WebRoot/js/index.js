@@ -176,3 +176,12 @@ function OnorOff() {
 		aNode.className = "show off";
 	}
 }
+
+function showAttribute() {
+	var aNode =document.getElementById("id6");
+	if(aNode.className == "id6show"){
+		aNode.className = "id6hidden";
+	}else{
+		aNode.className = "id6show";
+	}
+}

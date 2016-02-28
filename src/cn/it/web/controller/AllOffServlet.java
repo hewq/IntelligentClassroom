@@ -59,7 +59,7 @@ public class AllOffServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		String room_building = room_num.substring(0, 1);
-		response.sendRedirect("/IntelligentClassroom/servlet/InRoomUIServlet?room_num="+room_num+"&room_building="+room_building);
+		response.sendRedirect(request.getContextPath()+"/servlet/InRoomUIServlet?room_num="+room_num+"&room_building="+room_building);
 	}
 
 

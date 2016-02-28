@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 import cn.it.dao.IntelligentDao;
 import cn.it.dao.impl.IntelligentDaoImpl;
 import cn.it.socket.Client;
@@ -46,7 +47,6 @@ public class AllOnServlet extends HttpServlet {
 						.getString("lights_num4room");
 				map.put(lights_num4room, "1");
 			}
-
 			for (int i = 0; i < map.size(); i++) {
 				key = String.valueOf(i);
 				value = map.get(key);
@@ -60,7 +60,7 @@ public class AllOnServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		String room_building = room_num.substring(0, 1);
-		response.sendRedirect("/IntelligentClassroom/servlet/InRoomUIServlet?room_num="
+		response.sendRedirect(request.getContextPath() + "/servlet/InRoomUIServlet?room_num="
 				+ room_num + "&room_building=" + room_building);
 	}
 

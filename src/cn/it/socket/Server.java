@@ -16,7 +16,9 @@ import java.io.*;
 
 import cn.it.exception.MessageFlagException;
 import cn.it.multiThread.MultiClientThread;
+import cn.it.offline.controller.ProcessingInfrared;
 import cn.it.offline.controller.ProcessingLights;
+import cn.it.offline.controller.ProcessingRFID;
 
 public class Server implements Runnable{
 	public static int PORT = 6543;
@@ -89,9 +91,15 @@ public class Server implements Runnable{
 						ack = "001";
 						pw.println(ack);
 						pw.flush();
+						
+						ProcessingRFID prfid = new ProcessingRFID(message);
+						prfid.processing();
 					} else if (flag.equals("10")) { // “10”表示红外的信息,接收完毕不返回确认
 						pw.println(ack);
 						pw.flush();
+						
+						ProcessingInfrared pi = new ProcessingInfrared(message);
+						pi.processing();
 					} else {
 						ack = "999";
 						pw.println(ack);
