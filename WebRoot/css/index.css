@@ -28,17 +28,34 @@ body {
 	top:10px;}
 #id2{
 	position:relative;
-	width:1400px;
+	margin:-60px;
+	height:60px;
+	width:1440px;
 	float:left;
 	border-bottom:1px solid #CCCCCC}
 #id2 input{
 	position:absolute;
-	left:180px;
-	top:-40px;}
-#id2 select{
+	left:220px;
+	top:20px;}
+#id2 a{
 	position:absolute;
 	right:60px;
-	top:-40px;}
+	top:20px;
+	color:#2277ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;}
+#id2 a:hover {
+	position:absolute;
+	right:60px;
+	top:20px;
+	color:#0000ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
 #id3{
 	position:relative;
 	width:152px;

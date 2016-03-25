@@ -176,107 +176,7 @@ body {
 	display:block;}
 .close{
 	display:none;}
-#id4{
-	position:absolute;
-	top:130px;
-	left:250px;
-	height:519px;
-	width:1024px;
-	background-image:url(../image/glass2.jpg);
-}
-#id40{
-	position:absolute;
-	margin-left:150px;
-	margin-top:250px;
-	border:none;
-	height:191px;
-	width:200px;
-}
-#id40:hover{
-	position:absolute;
-	border:none;
-	margin-left:130px;
-	margin-top:230px;
-	height:239px;
-	width:250px;
-}
 
-#id41{
-	position:absolute;
-	margin-left:300px;
-	margin-top:100px;
-	border:none;
-	height:172px;
-	width:200px;
-}
-#id41:hover{
-	position:absolute;
-	border:none;
-	margin-left:280px;
-	margin-top:80px;
-	height:215px;
-	width:250px;
-}
-
-#id42{
-	position:absolute;
-	margin-left:400px;
-	margin-top:300px;
-	border:none;
-	height:200px;
-	width:200px;
-}
-#id42:hover{
-	border:none;
-	position:absolute;
-	margin-left:380px;
-	margin-top:280px;
-	height:250px;
-	width:250px;
-}
-
-#id43{
-	position:absolute;
-	margin-left:650px;
-	margin-top:300px;
-	border:none;
-	height:159px;
-	width:200px;
-}
-#id43:hover{
-	border:none;
-	position:absolute;
-	margin-left:630px;
-	margin-top:280px;
-	height:199px;
-	width:250px;
-}
-
-#id44{
-	position:absolute;
-	margin-left:750px;
-	margin-top:150px;
-	border:none;
-	height:200px;
-	width:200px;
-}
-#id44:hover{
-	border:none;
-	position:absolute;
-	margin-left:730px;
-	margin-top:130px;
-	height:250px;
-	width:250px;
-}
-
-#id45{
-	position:absolute;
-	margin-left:-85px;
-	margin-top:-50px;
-	height:61px;
-	width:330px;
-	background-image:url(../image/logo8.png);
-}
 #id46{
 	position:absolute;
 	background-color:#999999;
@@ -300,4 +200,66 @@ body {
 #id4 table tr a:hover{
 	text-decoration:none;
 }
-
+#id4 p{
+	position:absolute;
+	left:180px;
+	top:50px;
+	width:150px;
+	height:80px;
+	font-size:20px;
+	font-weight:bold;
+}
+#id40{
+	position:absolute;
+	left:180px;
+	top:100px;
+	width:1150px;
+	height:30px;
+	background-color:#13c4a5;
+	border-radius:5px;
+}
+#id41{
+	position:absolute;
+	left:180px;
+	top:130px;
+	width:1150px;
+	height:150px;
+	border-radius:5px;
+	border:1px solid #13c4a5;
+}
+#start{
+	position:absolute;
+	left:30px;
+	top:30px;
+}
+#end{
+	position:absolute;
+	left:280px;
+	top:30px;
+}
+#room{
+	position:absolute;
+	left:530px;
+	top:30px;
+}
+#startinput{
+	position:absolute;
+	left:30px;
+	top:60px;
+}
+#endinput{
+	position:absolute;
+	left:280px;
+	top:60px;
+}
+#classNum{
+	position:absolute;
+	left:530px;
+	top:60px;
+	width:100px;
+}
+#id41 button{
+	position:absolute;
+	left:830px;
+	top:60px;
+}

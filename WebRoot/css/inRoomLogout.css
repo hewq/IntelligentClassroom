@@ -52,10 +52,26 @@ body {
 	top:-24px;
 }
 
-#id2 select {
+#login {
 	position: absolute;
-	right: 60px;
+	right: 80px;
 	top: -24px;
+	color:#2277ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+#login:hover {
+	text-decoration:blink;
+	position: absolute;
+	right: 80px;
+	top: -24px;
+	color:#0000ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
 }
 
 #id3 {

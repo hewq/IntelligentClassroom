@@ -438,6 +438,31 @@
     <servlet-name>MessageUIServlet</servlet-name>
     <servlet-class>cn.it.web.UI.MessageUIServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>ClassRecordUIServlet</servlet-name>
+    <servlet-class>cn.it.web.UI.ClassRecordUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckPeopleUIServlet</servlet-name>
+    <servlet-class>cn.it.web.UI.CheckPeopleUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddPeopleUIServlet</servlet-name>
+    <servlet-class>cn.it.web.UI.AddPeopleUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectClassRecordServlet</servlet-name>
+    <servlet-class>cn.it.web.controller.SelectClassRecordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectClassRecordUIServlet</servlet-name>
+    <servlet-class>cn.it.web.UI.SelectClassRecordUIServlet</servlet-class>
+  </servlet>
+
+
+
+
+
 
 
 
@@ -928,6 +953,26 @@
   <servlet-mapping>
     <servlet-name>MessageUIServlet</servlet-name>
     <url-pattern>/servlet/MessageUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClassRecordUIServlet</servlet-name>
+    <url-pattern>/servlet/ClassRecordUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckPeopleUIServlet</servlet-name>
+    <url-pattern>/servlet/CheckPeopleUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPeopleUIServlet</servlet-name>
+    <url-pattern>/servlet/AddPeopleUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectClassRecordServlet</servlet-name>
+    <url-pattern>/servlet/SelectClassRecordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectClassRecordUIServlet</servlet-name>
+    <url-pattern>/servlet/SelectClassRecordUIServlet</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

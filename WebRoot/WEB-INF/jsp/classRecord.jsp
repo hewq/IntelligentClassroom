@@ -1,4 +1,10 @@
+<%@page import="java.sql.ResultSet"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page import="java.util.Date"%>
+<%@ page import="java.util.Calendar"%>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="cn.it.dao.IntelligentDao" %>
+<%@ page import="cn.it.dao.impl.IntelligentDaoImpl" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -8,10 +14,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/manage_index.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/classrecord.css" />
 <link rel="shortcut icon"
 	href="${pageContext.request.contextPath }/image/title.png">
 <script src="${pageContext.request.contextPath }/js/manage_index.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath }/js//Calendar4.js" type="text/javascript"></script>
 <title>智能教室管理系统</title>
 </head>
 
@@ -42,7 +49,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</dt>
 				<dt class="icon2">
 					<a href="${pageContext.request.contextPath }/servlet/RoomUIServlet"
-						onMouseOver="show()">房间</a>
+						onmouseover="show()">房间</a>
 				</dt>
 				<dd class="menv03">
 					<div class="sideleft">
@@ -66,19 +73,48 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 		
 		<div id="id4">
-			<div id="id46"  class="close">
-				<table>
-						<tr><td><a href="${pageContext.request.contextPath }/servlet/ClassRecordUIServlet">上课记录</a></td></tr>
-						<tr><td><a href="${pageContext.request.contextPath }/servlet/CheckPeopleUIServlet">人员查看</a></td></tr>
-						<tr><td><a href="${pageContext.request.contextPath }/servlet/AddPeopleUIServlet">人员添加</a></td></tr>
-				</table>
+			<div id="id46" class="close">
+					<table>
+							<tr><td><a href="${pageContext.request.contextPath }/servlet/ClassRecordUIServlet">上课记录</a></td></tr>
+							<tr><td><a href="${pageContext.request.contextPath }/servlet/CheckPeopleUIServlet">人员查看</a></td></tr>
+							<tr><td><a href="${pageContext.request.contextPath }/servlet/AddPeopleUIServlet">人员添加</a></td></tr>
+					</table>
+				</div>
+			<p>上课记录</p>
+			<div id="id40">
+				
 			</div>
-			<img src="../image/building1S.png" id="id40" onclick="B1forward()" target="_blank"/>
-			<img src="../image/building2S.png" id="id41" onclick="B2forward()" target="_blank"/>
-			<img src="../image/building3S.png" id="id42" onclick="B3forward()" target="_blank"/>
-			<img src="../image/building4S.png" id="id43" onclick="B4forward()" target="_blank"/>
-			<img src="../image/building5S.png" id="id44" onclick="B5forward()" target="_blank"/>
-			<img src="../image/logo8.png" id="id45" />
+			<%
+				Date current = new Date();
+				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+				String currentTime = dateFormat.format(current); 
+			 %>
+			<div id="id41">
+				<form action="${pageContext.request.contextPath }/servlet/SelectClassRecordServlet" method="post">
+					<span id="start" >开始时间</span>
+					<input type="text" value=<%=currentTime %> id="startinput" name="startinput" onclick="MyCalendar.SetDate(this,document.getElementById('startinput'))"/>
+					<span id="end">结束时间</span>
+					<input type="text" value=<%=currentTime %> id="endinput" name="endinput" onclick="MyCalendar.SetDate(this,document.getElementById('endinput'))"/>
+					<span id="room">房间号</span>
+					<select name="classNum" id="classNum">
+						<%
+							IntelligentDao dao = new IntelligentDaoImpl();
+							String sql = "select room_num from room order by room_num";
+							ResultSet rs = dao.select(sql);
+							while(rs.next()){
+						%>
+								<option><%=rs.getString("room_num")%></option>
+						<%
+							}
+							dao.close();
+						 %>
+					</select>
+					<button type="submit">查询</button>
+				</form>
+			</div>
+			<div id="id42">
+				
+			</div>
 		</div>
 	</div>
 </body>

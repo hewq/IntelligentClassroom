@@ -30,13 +30,7 @@
 				<input type="text" name="select" value="输入房间号" /> <span>${error
 					}</span>
 			</form>
-			<select onchange="window.location=this.value;" name="select">
-				<option value="1">游客</option>
-				<option
-					value="${pageContext.request.contextPath }/servlet/LoginUIServlet">登陆</option>
-				<option
-					value="${pageContext.request.contextPath }/servlet/RegisterUIServlet">注册</option>
-			</select>
+			<a id= "login" href="${pageContext.request.contextPath }/servlet/LoginUIServlet">log in</a>
 		</div>
 		<div id="id3">
 			<dl class="list">
