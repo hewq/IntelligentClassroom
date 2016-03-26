@@ -126,10 +126,24 @@
 							<td class="td1"><%=rs.getString("person_account")%></td>
 							<td class="td1"><%=rs.getString("person_position")%></td>
 							<td class="td1"><%=rs.getString("person_cardCode")%></td>
-							<td></td>
+							<td>
+								<button type="submit" class="edit" name="edit">edit</button>
+								<button type="submit" class="delete" name="delete"
+									 onclick="delperson(<%=rs.getString("person_num")%>)">delete</button>
+							</td>
 						</tr>
-						<%
+						<script type="text/javascript">
+							function delperson(person_num) {
+								var flag = confirm("将永远删除此人信息。确定删除？");
+								if (flag == true) {
+									window.location
+											.replace("DelPersonServlet?delete="
+													+ person_num);
+								}
 							}
+						</script>
+						<%
+								}
 							} catch (SQLException e) {
 								e.printStackTrace();
 							} finally {

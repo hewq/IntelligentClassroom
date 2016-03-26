@@ -87,7 +87,7 @@
 				<table class="inRoomTable1">
 					<tr>
 						<td><button class="close" name="lightLocation"
-								value="1,1:${room_num }" onMouseOver="OnorOff()"></button>
+								value="1,1:${room_num }"></button>
 						</td>
 						<td><button class="close" name="lightLocation"
 								value="2,1:${room_num }"></button>

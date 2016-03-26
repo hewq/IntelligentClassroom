@@ -458,6 +458,11 @@
     <servlet-name>SelectClassRecordUIServlet</servlet-name>
     <servlet-class>cn.it.web.UI.SelectClassRecordUIServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>DelPersonServlet</servlet-name>
+    <servlet-class>cn.it.web.controller.DelPersonServlet</servlet-class>
+  </servlet>
+
 
 
 
@@ -973,6 +978,10 @@
   <servlet-mapping>
     <servlet-name>SelectClassRecordUIServlet</servlet-name>
     <url-pattern>/servlet/SelectClassRecordUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelPersonServlet</servlet-name>
+    <url-pattern>/servlet/DelPersonServlet</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
