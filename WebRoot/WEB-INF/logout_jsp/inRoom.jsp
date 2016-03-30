@@ -66,7 +66,7 @@
 					<button id="id51button1" name=room_num value="${room_num }"></button>
 					<button id="id51button2" name=room_num value="${room_num }"></button>
 				<button id="id51button3" name="attribute"
-					onMouseOver="showAttribute()"></button>
+					onclick="showAttribute()"></button>
 			</div>
 				<table class="inRoomTable1">
 					<tr>

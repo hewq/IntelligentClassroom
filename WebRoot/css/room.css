@@ -76,11 +76,58 @@ body {
 	font-variant:small-caps;
 	text-decoration:none;
 }
+
 #login:hover {
 	text-decoration:blink;
 	position: absolute;
 	right: 80px;
 	top: -24px;
+	color:#0000ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+
+#logout {
+	position: absolute;
+	right: 80px;
+	top: -14px;
+	color:#2277ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+
+#logout:hover {
+	text-decoration:blink;
+	position: absolute;
+	right: 80px;
+	top: -14px;
+	color:#0000ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+
+#switch {
+	position: absolute;
+	right: 70px;
+	top: -34px;
+	color:#2277ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+
+#switch:hover {
+	text-decoration:blink;
+	position: absolute;
+	right: 70px;
+	top: -34px;
 	color:#0000ff;
 	font-family:arial;
 	font-style:oblique;
@@ -285,4 +332,94 @@ body {
 }
 .a_room{
 	text-decoration:none;
+}
+.icon3{
+	position:position;
+	top:110px;
+	width:150px;
+	height:40px;
+	margin-left:25px;
+}
+.icon3 a{
+	color:#2e2e2e;
+	text-decoration:none;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	}
+.icon3 a:link,.icon1 a:visited{
+	text-decoration:none;
+	}	
+.icon3 a:hover{
+	text-decoration:blink;
+	color:#ffffff;
+	}
+.icon4{
+	position:position;
+	top:150px;
+	width:150px;
+	height:40px;
+	left:25px;
+}
+.icon4 a{
+	color:#2e2e2e;
+	text-decoration:none;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	}
+.icon4 a:link,.icon1 a:visited{
+	text-decoration:none;
+	}	
+.icon4 a:hover{
+	text-decoration:blink;
+	color:#ffffff;
+	}
+.icon5{
+	position:position;
+	top:190px;
+	width:150px;
+	height:40px;
+	left:25px;
+}
+.icon5 a{
+	color:#2e2e2e;
+	text-decoration:none;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px;
+	margin:5px;
+	}
+.icon5 a:link,.icon1 a:visited{
+	text-decoration:none;
+	}	
+.icon5 a:hover{
+	text-decoration:blink;
+	color:#ffffff;
+	}
+.menv03{
+	margin-top:105px;
+	margin-left:75px;
+}
+.sideleft{
+	display:none;}
+.a{
+	font-size:20px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.a:hover{
+	color:#888888;
+}
+.b{
+	margin-top:105px;
+	margin-left:10px;
+	font-size:20px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.b:hover{
+	color:#888888;
 }

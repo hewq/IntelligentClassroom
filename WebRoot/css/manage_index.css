@@ -31,10 +31,25 @@ body {
 	width:1400px;
 	float:left;
 	border-bottom:1px solid #CCCCCC}
-#id2 input{
-	position:absolute;
-	left:180px;
-	top:-40px;}
+#id2 input {
+	position: absolute;
+	height:25px;
+	width:150px;
+	left: 180px;
+	top: -42px;
+	border-radius:8px;
+	border:solid 1px #2277ff;
+	filter:Alpha(Opacity=70);opacity:0.5;-moz-opacity:0.5;
+}
+#id2 input:focus{
+	position: absolute;
+	height:28px;
+	width:180px;
+	left: 180px;
+	top: -42px;
+	border-radius:10px;
+	border:solid 1px #0011ff;
+}
 #id2 select{
 	position:absolute;
 	right:60px;
@@ -170,6 +185,16 @@ body {
 	text-decoration:none;
 }
 .a:hover{
+	color:#888888;
+}
+.b{
+	margin-top:105px;
+	margin-left:10px;
+	font-size:20px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.b:hover{
 	color:#888888;
 }
 .open{

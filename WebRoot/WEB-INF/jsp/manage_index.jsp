@@ -29,11 +29,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="text" name="select" value="输入房间号" /> <span>${error
 					}</span>
 			</form>
-			<select onchange="window.location=this.value;" name="select">
-				<option value="1">游客</option>
-				<option value="${pageContext.request.contextPath }/servlet/LoginUIServlet">登陆</option>
-				<option value="${pageContext.request.contextPath }/servlet/RegisterUIServlet">注册</option>
-			</select>
+			<a id= "switch" href="${pageContext.request.contextPath }/servlet/SwitchAccountUIServlet">switch</a>
+			<a id= "logout" href="${pageContext.request.contextPath }/servlet/LogoutUIServlet">exit</a>
 		</div>
 		<div id="id3">
 			<dl class="list">
@@ -42,7 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</dt>
 				<dt class="icon2">
 					<a href="${pageContext.request.contextPath }/servlet/RoomUIServlet"
-						onMouseOver="show()">房间</a>
+						onmousemove="show()">房间</a>
 				</dt>
 				<dd class="menv03">
 					<div class="sideleft">
@@ -53,9 +50,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<a class="a" href="${pageContext.request.contextPath }/servlet/Building_5UIServlet">5号楼</a><br/>			
 					</div>
 				</dd>
-				<dt class="icon3" onmouseover="showid46()">
-					<a href="#">人员</a>
+				<dt class="icon3">
+					<a href="#" onclick="showperson()">人员</a>
 				</dt>
+				<dd id="renyuan" class="close">
+					<div >
+						<a class="b" href="${pageContext.request.contextPath }/servlet/ClassRecordUIServlet">上课记录</a>
+						<a class="b" href="${pageContext.request.contextPath }/servlet/CheckPeopleUIServlet">人员查看</a>
+						<a class="b" href="${pageContext.request.contextPath }/servlet/AddPeopleUIServlet">人员添加</a>
+					</div>
+				</dd>
 				<dt class="icon4">
 					<a href="#">房间设置</a>
 				</dt>
@@ -66,13 +70,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 		
 		<div id="id4">
-			<div id="id46"  class="close">
-				<table>
-						<tr><td><a href="${pageContext.request.contextPath }/servlet/ClassRecordUIServlet">上课记录</a></td></tr>
-						<tr><td><a href="${pageContext.request.contextPath }/servlet/CheckPeopleUIServlet">人员查看</a></td></tr>
-						<tr><td><a href="${pageContext.request.contextPath }/servlet/AddPeopleUIServlet">人员添加</a></td></tr>
-				</table>
-			</div>
 			<img src="../image/building1S.png" id="id40" onclick="B1forward()" target="_blank"/>
 			<img src="../image/building2S.png" id="id41" onclick="B2forward()" target="_blank"/>
 			<img src="../image/building3S.png" id="id42" onclick="B3forward()" target="_blank"/>

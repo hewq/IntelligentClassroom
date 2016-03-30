@@ -12,6 +12,14 @@ function show() {
 		divNode.className = "open";
 	}
 }
+function showperson() {
+	var aNode = document.getElementById("renyuan");
+	if(aNode.className == "open"){
+		aNode.className = "close";
+	}else{
+		aNode.className = "open";
+	}
+}
 function hidden(){
 	var aNode = event.srcElement;
 	var dtNode = aNode.parentNode;

@@ -462,6 +462,11 @@
     <servlet-name>DelPersonServlet</servlet-name>
     <servlet-class>cn.it.web.controller.DelPersonServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>ResponseDemoServlet</servlet-name>
+    <servlet-class>cn.it.web.controller.ResponseDemoServlet</servlet-class>
+  </servlet>
+
 
 
 
@@ -982,6 +987,10 @@
   <servlet-mapping>
     <servlet-name>DelPersonServlet</servlet-name>
     <url-pattern>/servlet/DelPersonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemoServlet</servlet-name>
+    <url-pattern>/servlet/ResponseDemoServlet</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

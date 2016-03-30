@@ -91,3 +91,48 @@
 	background-color:#22baa0;
 	color:#FFFFFF;
 }
+#logout {
+	position: absolute;
+	right: 80px;
+	top: -14px;
+	color:#2277ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+
+#logout:hover {
+	text-decoration:blink;
+	position: absolute;
+	right: 80px;
+	top: -14px;
+	color:#0000ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+
+#switch {
+	position: absolute;
+	right: 70px;
+	top: -34px;
+	color:#2277ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+
+#switch:hover {
+	text-decoration:blink;
+	position: absolute;
+	right: 70px;
+	top: -34px;
+	color:#0000ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}

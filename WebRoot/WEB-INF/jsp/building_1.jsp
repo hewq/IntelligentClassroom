@@ -28,11 +28,8 @@
 				<input type="text" name="select" value="输入房间号" /> <span>${error
 					}</span>
 			</form>
-			<select>
-				<option>游客</option>
-				<option>登陆</option>
-				<option>注册</option>
-			</select>
+			<a id= "switch" href="${pageContext.request.contextPath }/servlet/SwitchAccountUIServlet">switch</a>
+			<a id= "logout" href="${pageContext.request.contextPath }/servlet/LogoutUIServlet">exit</a>
 		</div>
 		<div id="id3">
 			<dl class="list">
@@ -58,6 +55,22 @@
 							href="${pageContext.request.contextPath }/servlet/Building_5UIServlet">5号楼</a><br />
 					</div>
 				</dd>
+				<dt class="icon3">
+					<a href="#" onclick="showperson()">人员</a>
+				</dt>
+				<dd id="renyuan" class="close">
+					<div >
+						<a class="b" href="${pageContext.request.contextPath }/servlet/ClassRecordUIServlet">上课记录</a>
+						<a class="b" href="${pageContext.request.contextPath }/servlet/CheckPeopleUIServlet">人员查看</a>
+						<a class="b" href="${pageContext.request.contextPath }/servlet/AddPeopleUIServlet">人员添加</a>
+					</div>
+				</dd>
+				<dt class="icon4">
+					<a href="#">房间设置</a>
+				</dt>
+				<dt class="icon5">
+					<a href="#">大楼设置</a>
+				</dt>
 			</dl>
 		</div>
 		<div id="id4">

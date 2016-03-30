@@ -103,3 +103,11 @@ function B5F5forward(){
 function B5F6forward(){
 	window.location.replace("Building_5F6UIServlet");
 }
+function showperson() {
+	var aNode = document.getElementById("renyuan");
+	if(aNode.className == "open"){
+		aNode.className = "close";
+	}else{
+		aNode.className = "open";
+	}
+}
