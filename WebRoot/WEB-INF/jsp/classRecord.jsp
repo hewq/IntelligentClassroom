@@ -36,8 +36,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="text" name="select" value="输入房间号" /> <span>${error
 					}</span>
 			</form>
-			<a id= "switch" href="${pageContext.request.contextPath }/servlet/SwitchAccountUIServlet">switch</a>
-			<a id= "logout" href="${pageContext.request.contextPath }/servlet/LogoutUIServlet">exit</a>
+			<a id= "switch" href="${pageContext.request.contextPath }/servlet/SwitchAccountServlet">switch</a>
+			<a id= "logout" href="${pageContext.request.contextPath }/servlet/LogoutServlet">exit</a>
 		</div>
 		<div id="id3">
 			<dl class="list">

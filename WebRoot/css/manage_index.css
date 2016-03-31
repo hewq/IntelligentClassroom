@@ -50,10 +50,24 @@ body {
 	border-radius:10px;
 	border:solid 1px #0011ff;
 }
-#id2 select{
-	position:absolute;
-	right:60px;
-	top:-40px;}
+#username{
+	position: absolute;
+	left: 1000px;
+	top: -35px;
+	color:#2255ff;
+	font-family:'ºÚÌå';
+	font-style:oblique;
+	font-size:18px;
+}
+#welcome{
+	position: absolute;
+	left: 1080px;
+	top: -65px;
+	color:red;
+	font-family:arial;
+	font-style:oblique;
+	font-size:24px;
+}
 #id3{
 	position:relative;
 	width:152px;
@@ -325,4 +339,48 @@ body {
 #id4 table tr a:hover{
 	text-decoration:none;
 }
+#logout {
+	position: absolute;
+	right: 80px;
+	top: -28px;
+	color:#2277ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
 
+#logout:hover {
+	text-decoration:blink;
+	position: absolute;
+	right: 80px;
+	top: -28px;
+	color:#0000ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+
+#switch {
+	position: absolute;
+	right: 70px;
+	top: -48px;
+	color:#2277ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+
+#switch:hover {
+	text-decoration:blink;
+	position: absolute;
+	right: 70px;
+	top: -48px;
+	color:#0000ff;
+	font-family:arial;
+	font-style:oblique;
+	font-variant:small-caps;
+	text-decoration:none;
+}

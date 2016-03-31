@@ -39,8 +39,8 @@
 				<input type="text" name="select" value="输入房间号" /> <span>${error
 					}</span>
 			</form>
-			<a id= "switch" href="${pageContext.request.contextPath }/servlet/SwitchAccountUIServlet">switch</a>
-			<a id= "logout" href="${pageContext.request.contextPath }/servlet/LogoutUIServlet">exit</a>
+			<a id= "switch" href="${pageContext.request.contextPath }/servlet/SwitchAccountServlet">switch</a>
+			<a id= "logout" href="${pageContext.request.contextPath }/servlet/LogoutServlet">exit</a>
 		</div>
 		<div id="id3">
 			<dl class="list">
@@ -106,7 +106,9 @@
 				</table>
 			</div>
 			<p>上课记录</p>
-			<div id="id40"></div>
+			<div id="id40">
+				<button id="hidden_id41" class="ishidden" onclick="ifhidden()"></button>
+			</div>
 			<%
 				Date current = new Date();
 				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -137,7 +139,7 @@
 					<button type="submit">查询</button>
 				</form>
 			</div>
-			<div id="id42">
+			<div id="id42" class="id41open">
 				<table id="resultTitle">
 					<tr>
 						<td>房间</td>
@@ -147,7 +149,7 @@
 					</tr>
 				</table>
 			</div>
-			<div id="id43">
+			<div id="id43" class="id42open">
 				<table id="resultContent">
 					<%
 							String sql1 = "select person_name,person_num,class_record_time from person,class_record "+

@@ -466,6 +466,21 @@
     <servlet-name>ResponseDemoServlet</servlet-name>
     <servlet-class>cn.it.web.controller.ResponseDemoServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>LogoutUIServlet</servlet-name>
+    <servlet-class>cn.it.web.UI.LogoutUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>cn.it.web.controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SwitchAccountServlet</servlet-name>
+    <servlet-class>cn.it.web.controller.SwitchAccountServlet</servlet-class>
+  </servlet>
+
+
+
 
 
 
@@ -991,6 +1006,18 @@
   <servlet-mapping>
     <servlet-name>ResponseDemoServlet</servlet-name>
     <url-pattern>/servlet/ResponseDemoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutUIServlet</servlet-name>
+    <url-pattern>/servlet/LogoutUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/servlet/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SwitchAccountServlet</servlet-name>
+    <url-pattern>/servlet/SwitchAccountServlet</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

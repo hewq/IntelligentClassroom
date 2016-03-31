@@ -248,7 +248,7 @@ body {
 	left:180px;
 	top:130px;
 	width:1150px;
-	height:150px;
+	height:120px;
 	border-radius:5px;
 	border:1px solid #13c4a5;
 }
@@ -267,21 +267,34 @@ body {
 	left:530px;
 	top:30px;
 }
-#startinput{
-	position:absolute;
-	left:30px;
-	top:60px;
+#startinput {
+	position: absolute;
+	text-align:center;
+	left: 30px;
+	top: 60px;
+	height:25px;
+	width:100px;
+	border-radius:8px;
+	border:solid 1px #13c4a5;
 }
 #endinput{
 	position:absolute;
+	text-align:center;
 	left:280px;
 	top:60px;
+	height:25px;
+	width:100px;
+	border-radius:8px;
+	border:solid 1px #13c4a5;
 }
 #classNum{
 	position:absolute;
 	left:530px;
 	top:60px;
-	width:100px;
+	height:25px;
+	width:70px;
+	border-radius:8px;
+	border:solid 1px #13c4a5;
 }
 #id41 button{
 	position:absolute;

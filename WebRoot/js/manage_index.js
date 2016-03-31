@@ -20,6 +20,20 @@ function showperson() {
 		aNode.className = "open";
 	}
 }
+function ifhidden() {
+	var aNode = document.getElementById("id41");
+	var id42Node = document.getElementById("id42");
+	var id43Node = document.getElementById("id43");
+	if(aNode.className == "open"){
+		aNode.className = "close";
+		id42Node.className = "id41hidden";
+		id43Node.className = "id42hidden";
+	}else{
+		aNode.className = "open";
+		id42Node.className = "id41open";
+		id43Node.className = "id42open";
+	}
+}
 function hidden(){
 	var aNode = event.srcElement;
 	var dtNode = aNode.parentNode;

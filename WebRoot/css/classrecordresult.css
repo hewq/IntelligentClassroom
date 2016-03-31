@@ -248,7 +248,7 @@ body {
 	left:180px;
 	top:130px;
 	width:1150px;
-	height:150px;
+	height:120px;
 	border-radius:5px;
 	border:1px solid #13c4a5;
 }
@@ -267,31 +267,56 @@ body {
 	left:530px;
 	top:30px;
 }
-#startinput{
-	position:absolute;
-	left:30px;
-	top:60px;
+#startinput {
+	position: absolute;
+	text-align:center;
+	left: 30px;
+	top: 60px;
+	height:25px;
+	width:100px;
+	border-radius:8px;
+	border:solid 1px #13c4a5;
 }
 #endinput{
 	position:absolute;
+	text-align:center;
 	left:280px;
 	top:60px;
+	height:25px;
+	width:100px;
+	border-radius:8px;
+	border:solid 1px #13c4a5;
 }
 #classNum{
 	position:absolute;
+	text-align:center;
 	left:530px;
 	top:60px;
-	width:100px;
+	height:25px;
+	width:70px;
+	border-radius:8px;
+	border:solid 1px #13c4a5;
 }
 #id41 button{
 	position:absolute;
 	left:830px;
 	top:60px;
 }
-#id42{
+.id41open{
 	position:absolute;
 	left:180px;
-	top:300px;
+	top:255px;
+	width:1150px;
+	height:80px;
+	border:1px solid #13c4a5;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom:none;
+}
+.id41hidden{
+	position:absolute;
+	left:180px;
+	top:135px;
 	width:1150px;
 	height:80px;
 	border:1px solid #13c4a5;
@@ -313,12 +338,24 @@ body {
 	background-color:#ffffff;
 	text-align:center;
 }
-#id43{
+.id42open{
 	position:absolute;
 	left:180px;
-	top:380px;
+	top:335px;
 	width:1150px;
-	height:280px;
+	height:315px;
+	border:1px solid #13c4a5;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top:none;
+	overflow: auto;
+}
+.id42hidden{
+	position:absolute;
+	left:180px;
+	top:215px;
+	width:1150px;
+	height:390px;
 	border:1px solid #13c4a5;
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
@@ -350,7 +387,7 @@ body {
 	left:5px;
 	top:5px;
 	width:1140px;
-	height:270px;
+	height:250px;
 	border-collapse:collapse;
 }
 #id43 table tr td{
