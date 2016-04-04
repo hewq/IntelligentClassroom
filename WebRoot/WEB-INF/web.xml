@@ -478,61 +478,34 @@
     <servlet-name>SwitchAccountServlet</servlet-name>
     <servlet-class>cn.it.web.controller.SwitchAccountServlet</servlet-class>
   </servlet>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <servlet>
+    <servlet-name>AndroidLoginServlet</servlet-name>
+    <servlet-class>cn.it.android.controller.AndroidLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidLightStateServlet</servlet-name>
+    <servlet-class>cn.it.android.controller.AndroidLightStateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidSettingServlet</servlet-name>
+    <servlet-class>cn.it.android.controller.AndroidSettingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidClassroomRecordServlet</servlet-name>
+    <servlet-class>cn.it.android.controller.AndroidClassroomRecordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidUserListServlet</servlet-name>
+    <servlet-class>cn.it.android.controller.AndroidUserListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidDeletePersonServlet</servlet-name>
+    <servlet-class>cn.it.android.controller.AndroidDeletePersonServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AndroidAddPersonServlet</servlet-name>
+    <servlet-class>cn.it.android.controller.AndroidAddPersonServlet</servlet-class>
+  </servlet>
 
 
 
@@ -1018,6 +991,34 @@
   <servlet-mapping>
     <servlet-name>SwitchAccountServlet</servlet-name>
     <url-pattern>/servlet/SwitchAccountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidLoginServlet</servlet-name>
+    <url-pattern>/servlet/AndroidLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidLightStateServlet</servlet-name>
+    <url-pattern>/servlet/AndroidLightStateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidSettingServlet</servlet-name>
+    <url-pattern>/servlet/AndroidSettingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidClassroomRecordServlet</servlet-name>
+    <url-pattern>/servlet/AndroidClassroomRecordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidUserListServlet</servlet-name>
+    <url-pattern>/servlet/AndroidUserListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidDeletePersonServlet</servlet-name>
+    <url-pattern>/servlet/AndroidDeletePersonServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AndroidAddPersonServlet</servlet-name>
+    <url-pattern>/servlet/AndroidAddPersonServlet</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

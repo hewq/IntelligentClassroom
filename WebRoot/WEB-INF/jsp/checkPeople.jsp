@@ -129,9 +129,9 @@
 							<td class="td1"><%=rs.getString("person_position")%></td>
 							<td class="td1"><%=rs.getString("person_cardCode")%></td>
 							<td>
-								<button type="submit" class="edit" name="edit">edit</button>
+								<button type="submit" class="edit" name="edit"></button>
 								<button type="submit" class="delete" name="delete"
-									 onclick="delperson(<%=rs.getString("person_num")%>)">delete</button>
+									 onclick="delperson(<%=rs.getString("person_num")%>)"></button>
 							</td>
 						</tr>
 						<script type="text/javascript">

@@ -24,7 +24,7 @@
 			<div id="name">智能教室</div>
 		</div>
 		<div id="id2">
-			<a id="ai" href="${pageContext.request.contextPath }/servlet/ResponseDemoServlet">demo</a>
+			<a id="ai" href="${pageContext.request.contextPath }/servlet/ResponseDemoServlet"></a>
 			<form
 				action="${pageContext.request.contextPath }/servlet/SelectLogoutServlet">
 				<input type="text" name="select" value="输入房间号" /> <span>${error

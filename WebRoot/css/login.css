@@ -1,4 +1,7 @@
 /* CSS Document */
+body{
+	background-image:url("../image/book.jpg");
+}
 #id0{
 	position:relative;
 }

@@ -99,12 +99,12 @@ public class IntelligentDaoImpl implements IntelligentDao {
 	/* (non-Javadoc)
 	 * @see cn.it.dao.impl.IntelligentDao#find(java.lang.String, java.lang.String)
 	 */
-	public User find(String person_account, String person_passwork) {
+	public User find(String person_account, String person_password) {
 
 
 		User user = new User();
 		String sql = "select * from person where person_account='"
-				+ person_account + "'and person_passwork='" + person_passwork
+				+ person_account + "'and person_passwork='" + person_password
 				+ "'";
 		rs = DBUtil.executeQuery(conn, sql);
 		try {
