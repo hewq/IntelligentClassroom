@@ -441,3 +441,15 @@ body {
 	font-variant:small-caps;
 	text-decoration:none;
 }
+.plus{
+	width:30px;
+	height:30px;
+	background-image:url(../image/plus.jpg);
+	border-radius:30px;
+}
+.sub{
+	width:30px;
+	height:30px;
+	background-image:url(../image/sub.jpg);
+	border-radius:30px;
+}

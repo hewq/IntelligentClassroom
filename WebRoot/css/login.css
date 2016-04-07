@@ -1,25 +1,30 @@
 /* CSS Document */
 body{
-	background-image:url("../image/book.jpg");
+	background-image:url("../image/class2.jpg");
 }
 #id0{
 	position:relative;
 }
 #id00{
 	position:absolute;
-	background-image:url(../image/logo8.png);
+	background-image:url(../image/logo.png);
 	height:61px;
 	width:330px;
 }
 #id01{
 	position:absolute;
-	margin:150px 0px 0px 200px;
+	height:106px;
+	width:407px;
+	left:30px;
+	top:310px;
+	background-image:url(../image/welcome.jpg);
 }
 #id01 p{
 	font-family:"Courier New", Courier, monospace;
 	font-style:oblique;
 	font-size:24px;
 	font-weight:bold;
+	color:white;
 }
 #id02{
 	position:absolute;
@@ -55,6 +60,7 @@ body{
 	border-style:none;
 	border-bottom:solid 1px #cfd2d5;
 	font-size:18px;
+	background:none;
 }
 #id0221{
 	height:30px;
@@ -62,17 +68,17 @@ body{
 	margin:10px;
 	border:hidden;
 	border-style:none;
+	border:none;
 	border-bottom:solid 1px #cfd2d5;
 	font-size:18px;
+	background:none;
 }
-.cinput{
-	
-}
+
 #id0220:focus,#id0221:focus{
 	height:30px;
 	width:330px;
 	margin:10px;
-	border:solid 1px #ffffff;
+	border:none;
 	border-bottom:solid 2px #22baa0;
 }
 #id023{
@@ -93,49 +99,4 @@ body{
 	font-size:18px;
 	background-color:#22baa0;
 	color:#FFFFFF;
-}
-#logout {
-	position: absolute;
-	right: 80px;
-	top: -14px;
-	color:#2277ff;
-	font-family:arial;
-	font-style:oblique;
-	font-variant:small-caps;
-	text-decoration:none;
-}
-
-#logout:hover {
-	text-decoration:blink;
-	position: absolute;
-	right: 80px;
-	top: -14px;
-	color:#0000ff;
-	font-family:arial;
-	font-style:oblique;
-	font-variant:small-caps;
-	text-decoration:none;
-}
-
-#switch {
-	position: absolute;
-	right: 70px;
-	top: -34px;
-	color:#2277ff;
-	font-family:arial;
-	font-style:oblique;
-	font-variant:small-caps;
-	text-decoration:none;
-}
-
-#switch:hover {
-	text-decoration:blink;
-	position: absolute;
-	right: 70px;
-	top: -34px;
-	color:#0000ff;
-	font-family:arial;
-	font-style:oblique;
-	font-variant:small-caps;
-	text-decoration:none;
 }

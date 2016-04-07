@@ -24,14 +24,18 @@ function ifhidden() {
 	var aNode = document.getElementById("id41");
 	var id42Node = document.getElementById("id42");
 	var id43Node = document.getElementById("id43");
+	var hidden_id41Node = document.getElementById("hidden_id41");
+	
 	if(aNode.className == "open"){
-		aNode.className = "close";
+		aNode.className = "close plus";
 		id42Node.className = "id41hidden";
 		id43Node.className = "id42hidden";
+		hidden_id41Node.className = "plus";
 	}else{
 		aNode.className = "open";
 		id42Node.className = "id41open";
 		id43Node.className = "id42open";
+		hidden_id41Node.className = "sub";
 	}
 }
 function hidden(){

@@ -27,7 +27,7 @@
 		<div id="id2">
 			<form
 				action="${pageContext.request.contextPath }/servlet/SelectLogoutServlet">
-				<input type="text" name="select" value="输入房间号" /> <span>${error
+				<input type="text" name="select" placeholder="输入房间号" /> <span>${error
 					}</span>
 			</form>
 			<a id= "login" href="${pageContext.request.contextPath }/servlet/LoginUIServlet">log in</a>

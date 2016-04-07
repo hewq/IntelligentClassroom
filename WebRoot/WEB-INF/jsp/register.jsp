@@ -19,21 +19,21 @@
 			<form
 				action="${pageContext.request.contextPath }/servlet/RegisterServlet"
 				method="post">
-				<input class="cinput" type="text" name="person_num" value="NUM" />
+				<input class="cinput" type="text" name="person_num" placeholder="NUM" />
 				<span class="csp">${form.errors.person_num}</span>
-				<input class="cinput"type="text" name="person_name" value="NAME" /> 
+				<input class="cinput"type="text" name="person_name" placeholder="NAME" /> 
 				<span class="csp">${form.errors.person_name}</span>
-				<input class="cinput" type="text" name="person_age" value="AGE" />
+				<input class="cinput" type="text" name="person_age" placeholder="AGE" />
 				<span class="csp">${form.errors.person_age}</span> 
-				<input class="cinput" type="text" name="person_account" value="ACCOUNT" />
+				<input class="cinput" type="text" name="person_account" placeholder="ACCOUNT" />
 				<span class="csp">${form.errors.person_account}</span>
-				<input class="cinput" type="password" name="person_password" value="PASSWORD" /> 
+				<input class="cinput" type="password" name="person_password" placeholder="PASSWORD" /> 
 				<span class="csp">${form.errors.person_password}</span>
-				<input class="cinput" type="password" name="person_password2" value="PASSWORD AGAIN" />
+				<input class="cinput" type="password" name="person_password2" placeholder="PASSWORD AGAIN" />
 				<span class="csp">${form.errors.person_password2}</span> 
-				<input class="cinput" type="text" name="person_power" value="POWER" /> 
+				<input class="cinput" type="text" name="person_power" placeholder="POWER" /> 
 				<span class="csp">${form.errors.person_power}</span>
-				<input class="cinput" type="text" name="person_cardCode" value="CARDCODE" />
+				<input class="cinput" type="text" name="person_cardCode" placeholder="CARDCODE" />
 				<span class="csp">${form.errors.person_cardCode}</span>
 				<p>
 					I agree to the <a href="#">IntelligentClassroom Terms</a> and <a

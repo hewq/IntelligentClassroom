@@ -36,7 +36,7 @@
 		<div id="id2">
 			<form
 				action="${pageContext.request.contextPath }/servlet/SelectServlet">
-				<input type="text" name="select" value="输入房间号" /> <span>${error
+				<input type="text" name="select" placeholder="输入房间号" /> <span>${error
 					}</span>
 			</form>
 			<a id= "switch" href="${pageContext.request.contextPath }/servlet/SwitchAccountServlet">switch</a>
@@ -107,14 +107,14 @@
 			</div>
 			<p>上课记录</p>
 			<div id="id40">
-				<button id="hidden_id41" class="ishidden" onclick="ifhidden()"></button>
+				<button id="hidden_id41" class="sub" onclick="ifhidden()"></button>
 			</div>
 			<%
 				Date current = new Date();
 				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 				String currentTime = dateFormat.format(current);
 			%>
-			<div id="id41">
+			<div id="id41" class="open">
 				<form
 					action="${pageContext.request.contextPath }/servlet/SelectClassRecordServlet"
 					method="post">

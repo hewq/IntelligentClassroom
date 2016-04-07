@@ -16,7 +16,7 @@
 		<div id="id00">
 		</div>
 		<div id="id01">
-			<p>welcome to Intelligent-Classroom</p>
+			
 		</div>
 		<div id="id02">
 			<div id="id020">
@@ -28,8 +28,8 @@
 			<div id="form">
 				<form action="${pageContext.request.contextPath }/servlet/LoginServlet" method="post">
 					<div id="id022">
-						<input id="id0220" class="cinput" type="text" name="account" value="account" />
-						<input id="id0221" class="cinput" type="password" name="password" value="password"  />
+						<input id="id0220" class="cinput" type="text" name="account" placeholder="account" />
+						<input id="id0221" class="cinput" type="password" name="password" placeholder="password"  />
 					</div>
 					<div id="id023">
 						<button type="submit" name="signin" value="Sign In">Sign In</button>
