@@ -1026,6 +1026,46 @@
     <servlet-name>PasswdCheckServlet</servlet-name>
     <servlet-class>cn.it.ajax.PasswdCheckServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>Person_numCheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.Person_numCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Person_nameCheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.Person_nameCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Person_ageCheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.Person_ageCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Person_accountCheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.Person_accountCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Person_passwordCheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.Person_passwordCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Person_password2CheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.Person_password2CheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Person_powerCheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.Person_powerCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Person_cardCodeCheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.Person_cardCodeCheckServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
 
 
   <servlet-mapping>
@@ -1039,5 +1079,37 @@
   <servlet-mapping>
     <servlet-name>PasswdCheckServlet</servlet-name>
     <url-pattern>/servlet/PasswdCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Person_numCheckServlet</servlet-name>
+    <url-pattern>/servlet/Person_numCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Person_nameCheckServlet</servlet-name>
+    <url-pattern>/servlet/Person_nameCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Person_ageCheckServlet</servlet-name>
+    <url-pattern>/servlet/Person_ageCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Person_accountCheckServlet</servlet-name>
+    <url-pattern>/servlet/Person_accountCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Person_passwordCheckServlet</servlet-name>
+    <url-pattern>/servlet/Person_passwordCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Person_password2CheckServlet</servlet-name>
+    <url-pattern>/servlet/Person_password2CheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Person_powerCheckServlet</servlet-name>
+    <url-pattern>/servlet/Person_powerCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Person_cardCodeCheckServlet</servlet-name>
+    <url-pattern>/servlet/Person_cardCodeCheckServlet</url-pattern>
   </servlet-mapping>
 </web-app>

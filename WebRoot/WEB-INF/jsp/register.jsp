@@ -4,9 +4,135 @@
 <html>
 <head>
 <title>REGISTER</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath }/image/title.png">
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath }/image/title.png">
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath }/css/register.css" />
+<script type="text/javascript"
+	src="${pageContext.request.contextPath }/js/ajax.js"></script>
+<script type="text/javascript">
+	function person_numCheck() {
+		var person_num = document.getElementById("person_num");
+		var url = "Person_numCheckServlet";
+		var params = "person_num=" + person_num.value;
+		sendRequest(url, params, 'POST', person_numResult);
+	}
+	function person_numResult() {
+		if (xmlHttpRequest.readyState == 4) {
+			if (xmlHttpRequest.status == 200) {
+				var info = xmlHttpRequest.responseText;
+				span1.innerHTML = info;
+				span11.innerHTML = "";
+			}
+		}
+	}
+	function person_nameCheck() {
+		var person_num = document.getElementById("person_name");
+		var url = "Person_nameCheckServlet";
+		var params = "person_name=" + person_name.value;
+		sendRequest(url, params, 'POST', person_nameResult);
+	}
+	function person_nameResult() {
+		if (xmlHttpRequest.readyState == 4) {
+			if (xmlHttpRequest.status == 200) {
+				var info = xmlHttpRequest.responseText;
+				span2.innerHTML = info;
+				span21.innerHTML = "";
+			}
+		}
+	}
+	function person_ageCheck() {
+		var person_age = document.getElementById("person_age");
+		var url = "Person_ageCheckServlet";
+		var params = "person_age=" + person_age.value;
+		sendRequest(url, params, 'POST', person_ageResult);
+	}
+	function person_ageResult() {
+		if (xmlHttpRequest.readyState == 4) {
+			if (xmlHttpRequest.status == 200) {
+				var info = xmlHttpRequest.responseText;
+				span3.innerHTML = info;
+				span31.innerHTML = "";
+			}
+		}
+	}
+	function person_accountCheck() {
+		var person_account = document.getElementById("person_account");
+		var url = "Person_accountCheckServlet";
+		var params = "person_account=" + person_account.value;
+		sendRequest(url, params, 'POST', person_accountResult);
+	}
+	function person_accountResult() {
+		if (xmlHttpRequest.readyState == 4) {
+			if (xmlHttpRequest.status == 200) {
+				var info = xmlHttpRequest.responseText;
+				span4.innerHTML = info;
+				span41.innerHTML = "";
+			}
+		}
+	}
+	function person_passwordCheck() {
+		var person_password = document.getElementById("person_password");
+		var url = "Person_passwordCheckServlet";
+		var params = "person_password=" + person_password.value;
+		sendRequest(url, params, 'POST', person_passwordResult);
+	}
+	function person_passwordResult() {
+		if (xmlHttpRequest.readyState == 4) {
+			if (xmlHttpRequest.status == 200) {
+				var info = xmlHttpRequest.responseText;
+				span5.innerHTML = info;
+				span51.innerHTML = "";
+			}
+		}
+	}
+	function person_password2Check() {
+		var person_password2 = document.getElementById("person_password2");
+		var person_password = document.getElementById("person_password");
+		var url = "Person_password2CheckServlet";
+		var params = "person_password2=" + person_password2.value + "&person_password="+person_password.value;
+		sendRequest(url, params, 'POST', person_password2Result);
+	}
+	function person_password2Result() {
+		if (xmlHttpRequest.readyState == 4) {
+			if (xmlHttpRequest.status == 200) {
+				var info = xmlHttpRequest.responseText;
+				span6.innerHTML = info;
+				span61.innerHTML = "";
+			}
+		}
+	}
+	function person_powerCheck() {
+		var person_power = document.getElementById("person_power");
+		var url = "Person_powerCheckServlet";
+		var params = "person_power=" + person_power.value;
+		sendRequest(url, params, 'POST', person_powerResult);
+	}
+	function person_powerResult() {
+		if (xmlHttpRequest.readyState == 4) {
+			if (xmlHttpRequest.status == 200) {
+				var info = xmlHttpRequest.responseText;
+				span7.innerHTML = info;
+				span71.innerHTML = "";
+			}
+		}
+	}
+	function person_cardCodeCheck() {
+		var person_cardCode = document.getElementById("person_cardCode");
+		var url = "Person_cardCodeCheckServlet";
+		var params = "person_cardCode=" + person_cardCode.value;
+		sendRequest(url, params, 'POST', person_cardCodeResult);
+	}
+	function person_cardCodeResult() {
+		if (xmlHttpRequest.readyState == 4) {
+			if (xmlHttpRequest.status == 200) {
+				var info = xmlHttpRequest.responseText;
+				span8.innerHTML = info;
+				span81.innerHTML = "";
+			}
+		}
+	}
+</script>
 </head>
 
 <body>
@@ -19,30 +145,31 @@
 			<form
 				action="${pageContext.request.contextPath }/servlet/RegisterServlet"
 				method="post">
-				<input class="cinput" type="text" name="person_num"  value="${param.person_num }"  placeholder="NUM" />
-				<span class="csp">${form.errors.person_num}</span>
-				<span class="cst">${form.tips.person_num}</span>
-				<input class="cinput"type="text" name="person_name" value="${param.person_name }" placeholder="NAME" /> 
-				<span class="csp">${form.errors.person_name}</span>
-				<span class="cst">${form.tips.person_name}</span>
-				<input class="cinput" type="text" name="person_age" value="${param.person_age }"  placeholder="AGE" />
-				<span class="csp">${form.errors.person_age}</span> 
-				<span class="cst">${form.tips.person_age}</span>
-				<input class="cinput" type="text" name="person_account"  value="${param.person_account }" placeholder="ACCOUNT" />
-				<span class="csp">${form.errors.person_account}</span>
-				<span class="cst">${form.tips.person_account}</span>
-				<input class="cinput" type="password" name="person_password" value="${param.person_password }"  placeholder="PASSWORD" /> 
-				<span class="csp">${form.errors.person_password}</span>
-				<span class="cst">${form.tips.person_password}</span>
-				<input class="cinput" type="password" name="person_password2" value="${param.person_password2 }"  placeholder="PASSWORD AGAIN" />
-				<span class="csp">${form.errors.person_password2}</span> 
-				<span class="cst">${form.tips.person_password2}</span>
-				<input class="cinput" type="text" name="person_power" value="${param.person_power }"  placeholder="POWER" /> 
-				<span class="csp">${form.errors.person_power}</span>
-				<span class="cst">${form.tips.person_power}</span>
-				<input class="cinput" type="text" name="person_cardCode"  value="${param.person_cardCode }" placeholder="CARDCODE" />
-				<span class="csp">${form.errors.person_cardCode}</span>
-				<span class="cst">${form.tips.person_cardCode}</span>
+				<input id="person_num" class="cinput" type="text" name="person_num"
+					value="${param.person_num }" placeholder="NUM" onblur="person_numCheck()"/> 
+				<span	class="csp" id="span1">${form.errors.person_num}</span> <span id="span11" class="cst">${form.tips.person_num}</span>
+				<input id="person_name" class="cinput" type="text" name="person_name"
+					value="${param.person_name }" placeholder="NAME" onblur="person_nameCheck()"/> 
+				<span	class="csp" id="span2">${form.errors.person_name}</span> <span id="span21" class="cst">${form.tips.person_name}</span>
+				<input id="person_age" class="cinput" type="text" name="person_age"
+					value="${param.person_age }" placeholder="AGE" onblur="person_ageCheck()"/> 
+				<span	class="csp" id="span3">${form.errors.person_age}</span> <span id="span31"class="cst">${form.tips.person_age}</span>
+				<input id="person_account" class="cinput" type="text" name="person_account"
+					value="${param.person_account }" placeholder="ACCOUNT" onblur="person_accountCheck()"/>
+				 <span class="csp" id="span4">${form.errors.person_account}</span> <span id="span41" class="cst">${form.tips.person_account}</span>
+				<input id="person_password" class="cinput" type="password" name="person_password"
+					value="${param.person_password }" placeholder="PASSWORD" onblur="person_passwordCheck()"/> 
+				<span	class="csp" id="span5">${form.errors.person_password}</span> <span id="span51" class="cst">${form.tips.person_password}</span>
+				<input id="person_password2" class="cinput" type="password" name="person_password2"
+					value="${param.person_password2 }" placeholder="PASSWORD AGAIN" onblur="person_password2Check()"/> 
+				<span id="span6" class="csp">${form.errors.person_password2}</span>
+				<span id="span61" class="cst">${form.tips.person_password2}</span> 
+				<input id="person_power" class="cinput" type="text" name="person_power"
+					value="${param.person_power }" placeholder="POWER" onblur="person_powerCheck()"/> 
+				<span	class="csp" id="span7">${form.errors.person_power}</span> <span id="span71" class="cst">${form.tips.person_power}</span>
+				<input id="person_cardCode" class="cinput" type="text" name="person_cardCode"
+					value="${param.person_cardCode }" placeholder="CARDCODE" onblur="person_cardCodeCheck()"/> 
+				<span	class="csp" id="span8">${form.errors.person_cardCode}</span> <span id="span81" class="cst">${form.tips.person_cardCode}</span>
 				<p>
 					I agree to the <a href="#">IntelligentClassroom Terms</a> and <a
 						href="#">Privacy</a>.
@@ -52,7 +179,8 @@
 			</form>
 		</div>
 		<div id="other">
-			<a href="${pageContext.request.contextPath }/servlet/LoginUIServlet">Sign in</a>&nbsp; <a href="#">Help</a>
+			<a href="${pageContext.request.contextPath }/servlet/LoginUIServlet">Sign
+				in</a>&nbsp; <a href="#">Help</a>
 		</div>
 	</div>
 </body>

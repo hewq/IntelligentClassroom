@@ -1,5 +1,8 @@
 package cn.it.service.impl;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import cn.it.dao.IntelligentDao;
 import cn.it.dao.impl.IntelligentDaoImpl;
 import cn.it.domain.User;
@@ -13,15 +16,29 @@ public class BusinessServiceImpl {
 	// 对web层提供注册服务
 	public void register(User user)throws UserExistException{
 
+		String sql = "select * from person where person_num ="+user.getPerson_num();
+		String sql2 = "select * from person where person_account ="+user.getPerson_account();
+		IntelligentDao dao = new IntelligentDaoImpl();
+		ResultSet rs = dao.select(sql);
+		ResultSet rs2 = dao.select(sql2);
 		//先判断用户是否存在
-		boolean b = dao.find(user.getPerson_name());
-		if(b){
-			throw new UserExistException();
-		}else{
-			String md5Password = ServiceUtils.md5(user.getPerson_password());
-			user.setPerson_password(md5Password);
-			dao.add(user);
+		try {
+			if(rs.next()){
+				throw new UserExistException();
+			}
+			else if(rs2.next()){
+				throw new UserExistException();
+			}
+			else{
+				String md5Password = ServiceUtils.md5(user.getPerson_password());
+				user.setPerson_password(md5Password);
+				dao.add(user);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		
 	}
 	
 	//对web层提供登录服务

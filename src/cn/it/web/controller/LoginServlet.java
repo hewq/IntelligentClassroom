@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
 			response.sendRedirect(request.getContextPath()+"/servlet/Manage_indexUIServlet");
 			return;
 		}else{
-			request.setAttribute("message", "ÃÜÂë´íÎó£¡");
+			request.setAttribute("message", "ÕËºÅ»òÃÜÂë´íÎó£¡");
 			request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request, response);
 		}
 		
