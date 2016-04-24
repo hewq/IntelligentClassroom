@@ -14,13 +14,15 @@ import cn.it.utils.WebUtils;
 
 public class RegisterUIServlet extends HttpServlet {
 
-	private Map<String,String> errors = new HashMap<String,String>();
+	private Map<String,String> tips = new HashMap<String,String>();
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		RegisterForm form = new RegisterForm();
 		form.init();
-		errors = form.getErrors();
+		tips = form.getTips();
 		String flag = request.getParameter("flag");
+		/*
 		if(!(flag == null)){
 			String person_num =  request.getParameter("person_num");
 			String person_name =  request.getParameter("person_name");
@@ -40,7 +42,7 @@ public class RegisterUIServlet extends HttpServlet {
 			errors.put("person_power", person_power);
 			errors.put("person_cardCode", person_cardCode);
 		}
-		
+		 */
 		request.setAttribute("form", form);
 		request.getRequestDispatcher("/WEB-INF/jsp/register.jsp").forward(request, response);
 	}

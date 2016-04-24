@@ -51,4 +51,11 @@ public class IntelligentDaoTest {
 		user.setPerson_password("0000");
 		idi.update(user);
 	}
+	
+	@Test
+	public void testFindAccount(){
+		IntelligentDao idi = new IntelligentDaoImpl();
+		User user = new User();
+		System.out.println(idi.findAccount("hewq"));
+	}
 }

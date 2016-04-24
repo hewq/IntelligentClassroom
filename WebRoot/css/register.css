@@ -62,6 +62,11 @@
 .csp{
 	font-size:14px;
 	font-family:"Courier New", Courier, monospace;
+	color:#ff0000;
+}
+.cst{
+	font-size:14px;
+	font-family:"Courier New", Courier, monospace;
 	color:#8f8f8f;
 }
 .cbut{

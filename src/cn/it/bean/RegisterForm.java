@@ -14,6 +14,7 @@ public class RegisterForm {
 	private String person_power;
 	private String person_cardCode;
 	private Map errors = new HashMap();
+	private Map tips = new HashMap();
 
 	public String getPerson_num() {
 		return person_num;
@@ -87,15 +88,24 @@ public class RegisterForm {
 		this.errors = errors;
 	}
 
+	
+	public Map getTips() {
+		return tips;
+	}
+
+	public void setTips(Map tips) {
+		this.tips = tips;
+	}
+
 	public void init(){
-		errors.put("person_num", "8位数字。");
-		errors.put("person_name", "汉字");
-		errors.put("person_age", "1-3位数字。");
-		errors.put("person_account", "3-8位字母。");
-		errors.put("person_password", "至少6位数字或字母。");
-		errors.put("person_password2", "至少6位数字或字母。");
-		errors.put("person_power", "1位数字。");
-		errors.put("person_cardCode", "9位数字。");
+		tips.put("person_num", "8位数字。");
+		tips.put("person_name", "汉字");
+		tips.put("person_age", "1-3位数字。");
+		tips.put("person_account", "3-8位字母。");
+		tips.put("person_password", "至少6位数字或字母。");
+		tips.put("person_password2", "至少6位数字或字母。");
+		tips.put("person_power", "1位数字。");
+		tips.put("person_cardCode", "9位数字。");
 	}
 	
 	public boolean validate() {

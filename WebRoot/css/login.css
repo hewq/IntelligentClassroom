@@ -30,7 +30,7 @@ body{
 	position:absolute;
 	height:550px;
 	width:360px;
-	border:groove 1px #e1e1e1;
+	border:solid 1px #22baa0;
 	margin-left:800px;
 	margin-top:80px;
 	border-top:5px solid #22baa0;
@@ -52,40 +52,71 @@ body{
 	font-weight:bold;
 	margin:30px;
 }
+
 #id0220{
-	height:40px;
+	position:absolute;
+	top:200px;
+	left:0px;
+	height:30px;
 	width:330px;
 	margin:10px;
 	border:hidden;
 	border-style:none;
-	border-bottom:solid 1px #cfd2d5;
+	border-bottom:solid 1px #22baa0;
 	font-size:18px;
 	background:none;
+	outline:none;
+}
+#accounttips{
+	position:absolute;
+	top:250px;
+	left:10px;
+	width:330px;
+	height:20px;
+	font-size:14px;
+	color:red;
 }
 #id0221{
+	position:absolute;
+	top:270px;
+	left:0px;
 	height:30px;
 	width:330px;
 	margin:10px;
 	border:hidden;
 	border-style:none;
 	border:none;
-	border-bottom:solid 1px #cfd2d5;
+	border-bottom:solid 1px #22baa0;
 	font-size:18px;
 	background:none;
+	outline:none;
 }
-
+#passwdtips{
+	position:absolute;
+	top:320px;
+	left:10px;
+	width:330px;
+	height:20px;
+	font-size:14px;
+	color:red;
+}
 #id0220:focus,#id0221:focus{
 	height:30px;
 	width:330px;
 	margin:10px;
-	border:none;
-	border-bottom:solid 2px #22baa0;
+	outline:none;
+	border-bottom:solid 3px #22baa0;
+	
 }
+
 #id023{
 	text-align:center;
 	margin:30px;
 }
 #id023 button{
+	position:absolute;
+	top:350px;
+	left:45px;
 	height:40px;
 	width:280px;
 	font-size:18px;

@@ -506,16 +506,6 @@
     <servlet-name>AndroidAddPersonServlet</servlet-name>
     <servlet-class>cn.it.android.controller.AndroidAddPersonServlet</servlet-class>
   </servlet>
-
-
-
-
-
-
-
-
-
-
   <servlet-mapping>
     <servlet-name>Building_1UIServlet</servlet-name>
     <url-pattern>/servlet/Building_1UIServlet</url-pattern>
@@ -1023,4 +1013,31 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>AccountCheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.AccountCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PasswdCheckServlet</servlet-name>
+    <servlet-class>cn.it.ajax.PasswdCheckServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>*.faces</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AccountCheckServlet</servlet-name>
+    <url-pattern>/servlet/AccountCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PasswdCheckServlet</servlet-name>
+    <url-pattern>/servlet/PasswdCheckServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

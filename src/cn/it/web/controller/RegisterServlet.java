@@ -21,6 +21,7 @@ public class RegisterServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		request.setCharacterEncoding("UTF-8");
+		
 
 		// 1.对表单字段进行合法性校验
 		RegisterForm form = WebUtils.request2Bean(request, RegisterForm.class);
@@ -55,10 +56,14 @@ public class RegisterServlet extends HttpServlet {
 			}
 		} else {
 			// 2. 如果校验失败，跳回到表单页面，回显校验失败信息
+			/*
 			response.sendRedirect(request.getContextPath()
 					+ "/servlet/RegisterUIServlet?flag=1&person_num="+errors.get("person_num")+"&person_name="+errors.get("person_name")+"&" +
 					"person_age="+errors.get("person_age")+"&person_account="+errors.get("person_account")+"&person_password="+errors.get("person_password")+"&" +
 					"person_password2="+errors.get("person_password2")+"&person_power="+errors.get("person_power")+"&person_cardCode="+errors.get("person_cardCode"));
+			*/
+			request.setAttribute("form", form);
+			request.getRequestDispatcher("/WEB-INF/jsp/register.jsp").forward(request, response);
 			return;
 		}
 

@@ -53,4 +53,6 @@ public interface IntelligentDao {
 	
 	void close();
 
+	boolean findAccount(String account);
+
 }

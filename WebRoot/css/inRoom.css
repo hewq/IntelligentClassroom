@@ -42,7 +42,7 @@ body {
 
 #id2 input {
 	position: absolute;
-	height:25px;
+	height:28px;
 	width:150px;
 	left: 180px;
 	top: -24px;
@@ -58,6 +58,7 @@ body {
 	top: -24px;
 	border-radius:10px;
 	border:solid 1px #0011ff;
+	outline:none;
 }
 
 #id2 span{
@@ -199,12 +200,46 @@ body {
 	background-image:url("../image/allon.jpg");
 	border-radius:24px;
 }
+#id51button1:hover{
+	filter:Alpha(Opacity=70);opacity:0.7;-moz-opacity:0.7;
+	margin:-8px;
+	margin-left:10px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/allon.jpg");
+	border-radius:24px;
+}
+#id51button1:focus{
+	margin:-8px;
+	margin-left:10px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/allon.jpg");
+	border-radius:24px;
+	outline:none;
+}
 #id51button2{
 	margin:-18px;
 	width:48px;
 	height:48px;
 	background-image:url("../image/alloff.jpg");
 	border-radius:24px;
+}
+#id51button2:hover{
+	filter:Alpha(Opacity=70);opacity:0.7;-moz-opacity:0.7;
+	margin:-18px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/alloff.jpg");
+	border-radius:24px;
+}
+#id51button2:focus{
+	margin:-18px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/alloff.jpg");
+	border-radius:24px;
+	outline:none;
 }
 #id51button3{
 	margin-left:980px;
@@ -213,6 +248,15 @@ body {
 	height:48px;
 	background-image:url("../image/attribute.jpg");
 	border-radius:24px;
+}
+#id51button3:focus{
+	margin-left:980px;
+	margin-top:-46px;
+	width:48px;
+	height:48px;
+	background-image:url("../image/attribute.jpg");
+	border-radius:24px;
+	outline:none;
 }
 #id51button3:hover{
 	filter:Alpha(Opacity=70);opacity:0.7;-moz-opacity:0.7;
@@ -338,6 +382,12 @@ body {
 	display:block;
 	width:105px;
 	height:39px;
+}
+.show:focus{
+	display:block;
+	width:105px;
+	height:39px;
+	outline:none;
 }
 .showno{
 	display:block;

@@ -42,7 +42,7 @@ body {
 
 #id2 input {
 	position: absolute;
-	height:25px;
+	height:28px;
 	width:150px;
 	left: 180px;
 	top: -24px;
@@ -58,6 +58,7 @@ body {
 	top: -24px;
 	border-radius:10px;
 	border:solid 1px #0011ff;
+	outline:none;
 }
 
 #id2 span{

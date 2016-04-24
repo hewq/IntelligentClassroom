@@ -159,6 +159,24 @@ public class IntelligentDaoImpl implements IntelligentDao {
 		return false;
 	}
 
+	public boolean findAccount(String account) {
+
+
+		String sql = "select * from person where person_account='" + account
+				+ "'";
+
+		rs = DBUtil.executeQuery(conn, sql);
+
+		try {
+			if (rs.next()) {
+				return true;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		return false;
+	}
 	// 修改用户数据
 	/*
 	 * (non-Javadoc)

@@ -33,7 +33,7 @@ body {
 	border-bottom:1px solid #CCCCCC}
 #id2 input {
 	position: absolute;
-	height:25px;
+	height:28px;
 	width:150px;
 	left: 180px;
 	top: -42px;
@@ -49,6 +49,7 @@ body {
 	top: -42px;
 	border-radius:10px;
 	border:solid 1px #0011ff;
+	outline:none;
 }
 #id2 select{
 	position:absolute;

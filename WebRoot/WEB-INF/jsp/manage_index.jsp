@@ -30,8 +30,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="text" name="select" placeholder="输入房间号"/> <span>${error
 					}</span>
 			</form>
-			<span id="username">${user.getPerson_name() }</span>
+			<span id="username">${sessionScope.user != null ? user.person_name:'' }</span>
 				<p id="welcome">welcome!</p>
+				
 			<a id= "switch" href="${pageContext.request.contextPath }/servlet/SwitchAccountServlet">switch</a>
 			<a id= "logout" href="${pageContext.request.contextPath }/servlet/LogoutServlet">exit</a>
 		</div>
