@@ -14,6 +14,21 @@
 	href="${pageContext.request.contextPath }/image/title.png">
 <script src="${pageContext.request.contextPath }/js/indexlogout.js"
 	type="text/javascript"></script>
+<script src="${pageContext.request.contextPath }/js/jquery.js"
+	type="text/javascript"></script>
+<script type="text/javascript">
+	 $(function(){
+		$("dt").mouseover(function(){
+			$("dt").nextUntil("dt").toggleClass("close");
+			 /*if($(this).next().css("display")=="none"){
+				$("dt").nextUntil("dt").show();
+			}
+			else{
+				$("dt").nextUntil("dt").hide();
+			} */
+		});
+	}); 
+</script>
 <title>智能教室管理系统</title>
 </head>
 
@@ -40,9 +55,9 @@
 				</dt>
 				<dt class="icon2">
 					<a href="${pageContext.request.contextPath }/servlet/RoomUILogoutServlet"
-						onMouseOver="show()" onMouseOut="hidden()">房间</a>
+						>房间</a>
 				</dt>
-				<dd class="menv03">
+				<dd class="menv03 close">
 					<div class="sideleft">
 						<a class="a"
 							href="${pageContext.request.contextPath }/servlet/Building_1UILogoutServlet">1号楼</a><br />

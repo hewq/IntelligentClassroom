@@ -12,10 +12,17 @@
 	href="${pageContext.request.contextPath }/image/title.png">
 <script src="${pageContext.request.contextPath }/js/indexlogout.js"
 	type="text/javascript"></script>
+<script src="${pageContext.request.contextPath }/js/jquery.js"
+	type="text/javascript"></script>
 <title>ROOM</title>
+<script type="text/javascript">
+	$(function(){
+		$(".tr3:even").css("background-color","#EEE");
+	});
+</script>
 </head>
 
-<body>
+<body >
 	<div id="id">
 		<div id="id1">
 			<div id="name">智能教室</div>
@@ -97,7 +104,7 @@
 						rs = DBUtil.executeQuery(conn, sql); //执行sql并返回结果
 						while (rs.next()) { //遍历结果集
 				%>
-				<tr>
+				<tr class="tr3" >
 					<td class="td1">
 						<%-- 打印房间号 --%> <a class="a_room"
 						href="${pageContext.request.contextPath }/servlet/InRoomLogoutServlet?room_num=<%=rs.getString("room_num")%>&room_building=<%=rs.getString("room_building")%>"><%=rs.getString("room_num")%></a>

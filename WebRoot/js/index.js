@@ -1,3 +1,6 @@
+$(function(){
+	alert("adfsfa");
+});
 function show() {
 	var aNode = event.srcElement;
 	var dtNode = aNode.parentNode;

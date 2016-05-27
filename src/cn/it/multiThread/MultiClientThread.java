@@ -31,7 +31,7 @@ public class MultiClientThread {
 			       s = ss.accept();
 			      System.out.println("第 "+(counter++)+" 个连接");
 			      Thread t = new Thread(new Server(s));
-			      t.start();
+			    //  t.start();
 			    }
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -12,7 +12,14 @@
 	href="${pageContext.request.contextPath }/image/title.png">
 <script src="${pageContext.request.contextPath }/js/index.js"
 	type="text/javascript"></script>
+<script src="${pageContext.request.contextPath }/js/jquery.js"
+	type="text/javascript"></script>
 <title>ROOM</title>
+<script type="text/javascript">
+$(function(){
+	alert("adfsfa");
+});
+</script>
 </head>
 
 <body>
