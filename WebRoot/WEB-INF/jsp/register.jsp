@@ -146,29 +146,29 @@
 				action="${pageContext.request.contextPath }/servlet/RegisterServlet"
 				method="post">
 				<input id="person_num" class="cinput" type="text" name="person_num"
-					value="${param.person_num }" placeholder="NUM" onblur="person_numCheck()"/> 
+					value="${param.person_num }" placeholder="NUM" onblur="person_numCheck()" required pattern="[0-9]{8}"/> 
 				<span	class="csp" id="span1">${form.errors.person_num}</span> <span id="span11" class="cst">${form.tips.person_num}</span>
 				<input id="person_name" class="cinput" type="text" name="person_name"
-					value="${param.person_name }" placeholder="NAME" onblur="person_nameCheck()"/> 
+					value="${param.person_name }" placeholder="NAME" onblur="person_nameCheck()" required required pattern="^([\u4e00-\u9fa5]+)$"/> 
 				<span	class="csp" id="span2">${form.errors.person_name}</span> <span id="span21" class="cst">${form.tips.person_name}</span>
 				<input id="person_age" class="cinput" type="text" name="person_age"
-					value="${param.person_age }" placeholder="AGE" onblur="person_ageCheck()"/> 
+					value="${param.person_age }" placeholder="AGE" onblur="person_ageCheck()" required required pattern="[0-9]{1,3}"//> 
 				<span	class="csp" id="span3">${form.errors.person_age}</span> <span id="span31"class="cst">${form.tips.person_age}</span>
 				<input id="person_account" class="cinput" type="text" name="person_account"
-					value="${param.person_account }" placeholder="ACCOUNT" onblur="person_accountCheck()"/>
+					value="${param.person_account }" placeholder="ACCOUNT" onblur="person_accountCheck()" required required pattern="[a-zA-Z]{3,8}"//>
 				 <span class="csp" id="span4">${form.errors.person_account}</span> <span id="span41" class="cst">${form.tips.person_account}</span>
 				<input id="person_password" class="cinput" type="password" name="person_password"
-					value="${param.person_password }" placeholder="PASSWORD" onblur="person_passwordCheck()"/> 
+					value="${param.person_password }" placeholder="PASSWORD" onblur="person_passwordCheck()" required required pattern="[A-Za-z0-9]{6,}"//> 
 				<span	class="csp" id="span5">${form.errors.person_password}</span> <span id="span51" class="cst">${form.tips.person_password}</span>
 				<input id="person_password2" class="cinput" type="password" name="person_password2"
-					value="${param.person_password2 }" placeholder="PASSWORD AGAIN" onblur="person_password2Check()"/> 
+					value="${param.person_password2 }" placeholder="PASSWORD AGAIN" onblur="person_password2Check()" required required pattern="[0-9]{8}"//> 
 				<span id="span6" class="csp">${form.errors.person_password2}</span>
 				<span id="span61" class="cst">${form.tips.person_password2}</span> 
 				<input id="person_power" class="cinput" type="text" name="person_power"
-					value="${param.person_power }" placeholder="POWER" onblur="person_powerCheck()"/> 
+					value="${param.person_power }" placeholder="POWER" onblur="person_powerCheck()" required required pattern="[0-9]{1}"//> 
 				<span	class="csp" id="span7">${form.errors.person_power}</span> <span id="span71" class="cst">${form.tips.person_power}</span>
 				<input id="person_cardCode" class="cinput" type="text" name="person_cardCode"
-					value="${param.person_cardCode }" placeholder="CARDCODE" onblur="person_cardCodeCheck()"/> 
+					value="${param.person_cardCode }" placeholder="CARDCODE" onblur="person_cardCodeCheck()" required required pattern="[0-9]{9}"//> 
 				<span	class="csp" id="span8">${form.errors.person_cardCode}</span> <span id="span81" class="cst">${form.tips.person_cardCode}</span>
 				<p>
 					I agree to the <a href="#">IntelligentClassroom Terms</a> and <a

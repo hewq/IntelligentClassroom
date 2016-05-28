@@ -56,10 +56,10 @@
 					method="post">
 					<div id="id022">
 						<input id="id0220" class="cinput" type="text" name="account"
-							placeholder="account" onblur="accountcheck()"/>
+							placeholder="account" onblur="accountcheck()" required/>
 						<div id="accounttips"></div>
 						<input id="id0221" class="cinput" type="password" name="password"
-							placeholder="password" onblur="passwdcheck()"/>
+							placeholder="password" onblur="passwdcheck()" required/>
 						<div id="passwdtips">${message }</div>
 					</div>
 					<div id="id023">
